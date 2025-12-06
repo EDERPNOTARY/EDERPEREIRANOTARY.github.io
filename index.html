@@ -273,7 +273,7 @@
             </nav>
             
             <div class="flex items-center space-x-4">
-                 <a href="tel:+18579953805" class="inline-flex items-center bg-accent text-white font-extrabold py-2 px-3 rounded-lg shadow-xl hover:bg-[#e55c2a] cta-button text-xs md:text-base uppercase tracking-wider transition duration-300">
+                 <a href="tel:+18579953805" onclick="gtag('event', 'contact_call', {'event_category': 'phone_call', 'event_label': 'header_cta_call'});" class="inline-flex items-center bg-accent text-white font-extrabold py-2 px-3 rounded-lg shadow-xl hover:bg-[#e55c2a] cta-button text-xs md:text-base uppercase tracking-wider transition duration-300">
                     <i data-lucide="phone-call" class="w-4 h-4 mr-1 md:mr-2"></i> <span class="hidden lg:inline text-xs mr-1 uppercase font-medium">Call Now:</span>
                     <span class="text-sm md:text-xl font-extrabold leading-none">(857) 995-3805</span>
                 </a>
@@ -323,7 +323,7 @@
                                 <input type="tel" name="phone" placeholder="Your Phone Number (Required)" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary">
                             </div>
                              <div>
-                                 <select name="service_type" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary font-bold">
+                                <select name="service_type" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary font-bold">
                                     <option value="" disabled selected>Select the Notary Service You Need Today</option>
                                     <option value="Apostille (URGENT)">Apostille (URGENT/International)</option>
                                     <option value="Loan Signing / Real Estate">Loan Signing / Real Estate Closing</option>
@@ -336,7 +336,7 @@
                             
                             <input type="hidden" name="_subject" value="New Urgent Quote Request - Hero Section (EN)">
 
-                            <button type="submit" class="w-full inline-flex items-center justify-center bg-accent text-white font-extrabold text-xl py-4 px-8 rounded-xl cta-button hover:bg-[#e55c2a] uppercase tracking-wider">
+                            <button type="submit" onclick="gtag('event', 'form_submit_click', {'event_category': 'form_hero', 'event_label': 'quick_quote_hero'});" class="w-full inline-flex items-center justify-center bg-accent text-white font-extrabold text-xl py-4 px-8 rounded-xl cta-button hover:bg-[#e55c2a] uppercase tracking-wider">
                                 Get Quick Quote
                             </button>
                             <p class="text-center text-xs text-gray-700 font-medium mt-2">We respond promptly via call or WhatsApp.</p>
@@ -404,7 +404,7 @@
                         <p class="font-extrabold text-2xl text-primary headline-font mb-2">Apostille Services</p>
                         <p class="text-gray-600 text-base">International document validation for use abroad. Fast and priority service available to meet your deadlines.</p>
                          <div class="mt-4">
-                            <a href="tel:+18579953805" class="text-accent font-bold inline-flex items-center hover:underline">
+                            <a href="tel:+18579953805" onclick="gtag('event', 'contact_call', {'event_category': 'phone_call', 'event_label': 'service_card_call'});" class="text-accent font-bold inline-flex items-center hover:underline">
                                 Request Urgent Quote <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                             </a>
                         </div>
@@ -649,7 +649,7 @@
                         
                         <input type="hidden" name="_subject" value="New High-Converting Appointment Request (EN)">
 
-                        <button type="submit" class="w-full inline-flex items-center justify-center bg-accent text-white font-extrabold text-xl py-4 px-8 rounded-xl cta-button hover:bg-[#e55c2a] uppercase tracking-wider">
+                        <button type="submit" onclick="gtag('event', 'form_submit_click', {'event_category': 'form_contact', 'event_label': 'appointment_request'});" class="w-full inline-flex items-center justify-center bg-accent text-white font-extrabold text-xl py-4 px-8 rounded-xl cta-button hover:bg-[#e55c2a] uppercase tracking-wider">
                             SUBMIT REQUEST & RECEIVE PRIORITY CALL
                         </button>
                         
@@ -724,7 +724,7 @@
 
     </main>
 
-    <a href="tel:+18579953805" class="fab" aria-label="Call Eder Pereira Notary">
+    <a href="tel:+18579953805" onclick="gtag('event', 'contact_call', {'event_category': 'phone_call', 'event_label': 'fab_call'});" class="fab" aria-label="Call Eder Pereira Notary">
         <i data-lucide="phone-call" class="w-10 h-10"></i> </a>
 
     <footer class="color-primary py-12">
@@ -736,13 +736,13 @@
                     <h4 class="text-2xl font-bold text-accent mb-5 border-b-2 border-accent/50 pb-2 headline-font">Contact Details</h4>
                     <address class="not-italic text-base space-y-3 text-gray-300">
                         <p>
-                            <a href="tel:+18579953805" class="flex items-center justify-center md:justify-start footer-contact-link">
+                            <a href="tel:+18579953805" onclick="gtag('event', 'contact_call', {'event_category': 'phone_call', 'event_label': 'footer_call'});" class="flex items-center justify-center md:justify-start footer-contact-link">
                                 <i data-lucide="phone-call" class="w-5 h-5 mr-3 inline-block text-accent"></i>
                                 +1 (857) 995-3805 (Call/Text)
                             </a>
                         </p>
                         <p>
-                            <a href="https://wa.me/18579953805" target="_blank" class="flex items-center justify-center md:justify-start footer-contact-link">
+                            <a href="https://wa.me/18579953805" target="_blank" onclick="gtag('event', 'contact_whatsapp', {'event_category': 'contact_chat', 'event_label': 'footer_whatsapp'});" class="flex items-center justify-center md:justify-start footer-contact-link">
                                 <i data-lucide="message-square" class="w-5 h-5 mr-3 inline-block text-accent"></i>
                                 +1 (857) 995-3805 (Priority WhatsApp)
                             </a>
