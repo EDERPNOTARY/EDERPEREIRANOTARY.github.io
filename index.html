@@ -6,279 +6,211 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P4BXLV9P');</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17510551592">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17510551592');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17510551592"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17510551592');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eder Pereira Notary: Apostille & Loan Signing Expert in Danvers, MA (Northshore)</title>
-    <meta name="description" content="Expert Apostille and Loan Signing services by Eder Pereira in Danvers, MA. Offering convenient Mobile Notary service across the Northshore region. Call (857) 995-3805 for urgent notarization.">
+    <title>EDER PEREIRA NOTARY PUBLIC: Urgent Apostille & Loan Signing in Danvers, MA</title>
+    <meta name="description" content="Get fast and professional Apostille and Loan Signing services by Eder Pereira in Danvers, MA. Offering convenient Mobile Notary service across the Northshore region. Call (857) 995-3805 for urgent notarization.">
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Inter:wght@100..1000&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
-        /* Custom Styles and Font Initialization */
+        /* BASE STYLES */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7;
-            color: #1f2937 /* Dark Gray */
+            background-color: #f4f7f9; /* Light, soft background */
+            color: #1f2937; 
         }
-        
-        /* New Font for Logo and Headlines */
         .headline-font {
             font-family: 'Playfair Display', serif;
         }
 
-        /* Primary Color: Deep Navy Blue (Trust, Stability) */
-        .color-primary { background-color: #043C6E }
-        .text-primary { color: #043C6E }
+        /* CONVERSION COLOR PALETTE: Deep Navy & Vibrant Orange */
+        .color-primary { background-color: #0A1931 } /* Deep Navy */
+        .text-primary { color: #0A1931 } 
         
-        /* Secondary Color: Soft Light Gray/Blue (Subtle Section Divider) */
-        .color-secondary { background-color: #F0F4F8 }
+        .bg-accent { background-color: #FF652F } /* Vibrant Orange (Action Color) */
+        .text-accent { color: #FF652F } 
+        .border-accent { border-color: #FF652F }
         
-        /* Accent Color: Rich Gold/Amber (Highlight, CTA) */
-        .bg-accent { background-color: #FFC300 }
-        .text-accent { color: #FFC300 }
-        .border-accent { border-color: #FFC300 }
-
-        /* CTA/FAB Button Style */
+        /* CTA/BUTTON: Aggressive shadow and lift */
         .cta-button {
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(4, 60, 110, 0.2), 0 2px 4px -2px rgba(4, 60, 110, 0.1)
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 6px 15px rgba(255, 101, 47, 0.5); 
+            letter-spacing: 0.05em; 
         }
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(4, 60, 110, 0.3), 0 4px 6px -4px rgba(4, 60, 110, 0.2)
-        }
-
-        /* Section Header Box Style (WHITE BACKGROUND - used for titles) */
-        .section-header-box {
-            display: inline-block; 
-            padding: 1.25rem 2rem;
-            border-radius: 1rem; 
-            background-color: #ffffff;
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(4, 60, 110, 0.2);
-            border-bottom: 5px solid #FFC300; /* Rich Gold highlight line */
-            max-width: 90%
-        }
-        .section-header-box h2 {
-            color: #043C6E; /* Primary color for title on white background */
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(255, 101, 47, 0.7);
+            background-color: #e55c2a; /* Darker Orange on hover */
         }
         
-        /* Highlighted Content Box Style (Used for Reviews/Services title boxes) */
-        .highlight-box {
-            padding: 1.25rem 2rem;
-            border-radius: 1rem;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
-            background-color: #ffffff; 
-            border-bottom: 5px solid #FFC300; 
+        /* HEADER/TITLES: Simple, clean separation */
+        .section-header-box {
+            display: inline-block; 
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px; /* Pill shape */
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #FF652F; /* Orange border */
             max-width: 90%;
-        }
-        .highlight-box h2, .highlight-box span, .highlight-box p {
-            color: #043C6E; /* Primary color for text on white background */
+            text-transform: uppercase;
         }
 
-        /* NEW PROMINENT HERO CTA BOX (White box with pulsing shadow) - Now holds the Quick Quote Form */
+        /* HERO CTA BOX: Maximum focus */
         .cta-hero-box {
-            padding: 1.5rem 2.5rem; 
+            padding: 2.5rem; 
             border-radius: 1rem;
             background-color: #ffffff; 
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 15px 25px -5px rgba(4, 60, 110, 0.3); 
-            border: 3px solid #FFC300; 
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 40px -10px rgba(10, 25, 49, 0.4); 
+            border-bottom: 8px solid #FF652F; 
             width: 100%; 
-            /* Apply the new black pulse animation */
-            animation: pulse-black-shadow 1.8s infinite ease-in-out;
+            animation: pulse-orange-shadow 2.5s infinite ease-in-out;
         }
-        .cta-hero-box h2, .cta-hero-box span, .cta-hero-box p, .cta-hero-box a {
-            color: #043C6E; /* Primary color for text on white background */
-        }
-        .cta-hero-box .text-accent {
-            color: #FFC300; /* Keep accent color for emphasis */
-        }
-
-        /* Floating Action Button (FAB) Style */
+        
+        /* FLOATING ACTION BUTTON (FAB) - Extremely visible */
         .fab {
             position: fixed;
-            bottom: 20px;
-            right: 20px; 
+            bottom: 30px; 
+            right: 30px; 
             z-index: 1000;
-            padding: 15px; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 20px; 
             border-radius: 50%; 
-            width: 72px; 
-            height: 72px; 
-            background-color: #FFC300; 
-            color: #043C6E; 
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
-            /* FAB keeps its original pulse for contrast */
-            animation: pulse-accent-shadow 2s infinite ease-in-out; 
+            width: 80px; 
+            height: 80px; 
+            background-color: #FF652F; /* Orange */
+            color: white; 
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7); 
+            animation: pulse-fab 2s infinite ease-in-out; 
+            border: 4px solid white; /* Strong white border */
         }
         .fab:hover {
-            background-color: #d69800; 
-            transform: scale(1.1); 
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            background-color: #e55c2a; 
+            transform: scale(1.18); 
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
             animation: none; 
         }
         
-        /* Keyframes for the Pulsing Shadow Effect (Used for FAB - Gold) */
-        @keyframes pulse-accent-shadow {
-            0% {
-                box-shadow: 0 0 0 0 rgba(255, 195, 0, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(255, 195, 0, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(255, 195, 0, 0);
-            }
+        /* ANIMATIONS */
+        @keyframes pulse-fab {
+            0% { box-shadow: 0 0 0 0 rgba(255, 101, 47, 0.7); }
+            70% { box-shadow: 0 0 0 25px rgba(255, 101, 47, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 101, 47, 0); }
+        }
+         @keyframes pulse-orange-shadow {
+            0% { box-shadow: 0 20px 40px -10px rgba(10, 25, 49, 0.3), 0 0 0 0 rgba(255, 101, 47, 0.5); }
+            50% { box-shadow: 0 20px 40px -10px rgba(10, 25, 49, 0.4), 0 0 0 15px rgba(255, 101, 47, 0); }
+            100% { box-shadow: 0 20px 40px -10px rgba(10, 25, 49, 0.3), 0 0 0 0 rgba(255, 101, 47, 0.5); }
         }
 
-        /* CUSTOM: Keyframes for the Pulsing Black Shadow Effect (Used for CTA Box) */
-        @keyframes pulse-black-shadow {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); /* Black shadow start */
-            }
-            50% {
-                box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); /* Larger spread for more drama */
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); /* Black shadow reset */
-            }
+        /* SERVICE CARD: Value-driven design */
+        .service-card-value {
+            transition: all 0.3s ease-in-out;
+            border-radius: 1rem;
+            overflow: hidden;
+            border-top: 5px solid transparent; /* Changed from border-left */
+            padding-bottom: 2rem;
+        }
+        .service-card-value:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(10, 25, 49, 0.2); 
+            border-top-color: #FF652F; /* Changed from border-left */
         }
         
-        /* FAQ Styles */
+        /* PRICE TAG */
+        .price-tag {
+            background-color: #e55c2a;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+        }
+
+        /* TRUST BADGE */
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: #0A1931; /* Deep Navy */
+            color: white;
+            border-radius: 9999px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* GOOGLE COLORS */
+        .google-blue { color: #4285F4; }
+        .google-red { color: #DB4437; }
+        .google-yellow { color: #F4B400; }
+        .google-green { color: #0F9D58; }
+
+
+        /* FAQ Styling */
         .faq-question {
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 1rem 0;
-            border-bottom: 1px solid #e5e7eb 
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.2s;
         }
-        .faq-answer {
+        .faq-question:hover {
+            color: #FF652F; /* Orange hover for question */
+        }
+        .faq-answer-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease-out;
+            transition: max-height 0.4s ease-out, padding-bottom 0.4s ease-out;
             padding-bottom: 0;
-            color: #4b5563 
         }
-        /* MODIFICAÇÃO: Altura máxima da resposta reduzida (80px) */
-        .faq-answer.open {
-            max-height: 80px; 
-            padding-bottom: 1rem
+        .faq-answer-content.open {
+            max-height: 400px; /* Increased for longer answers */
+            padding-bottom: 1rem;
         }
-        .faq-icon {
-            transition: transform 0.3s ease
-        }
-        .faq-icon.rotate {
-            transform: rotate(180deg)
+        .faq-icon.rotate-180 {
+            transform: rotate(180deg);
         }
         
-        /* Service Card Hover Effect */
-        .service-card-hover {
+        /* OTIMIZAÇÕES MOBILE/TOUCH - NOVO */
+        /* ÍCONES SOCIAIS COM MOVIMENTO (Melhora feedback em touch/mobile) */
+        .social-icon-move {
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icon-move:hover {
+            transform: translateY(-5px) scale(1.1);
+            color: #e55c2a; /* Darker orange on hover */
+        }
+
+        /* MOVIMENTO PARA LINKS DE CONTATO NO RODAPÉ */
+        .footer-contact-link {
             transition: all 0.3s ease-in-out;
-            border-top: 4px solid transparent 
         }
-        .service-card-hover:hover {
-            transform: translateY(-4px); 
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05); 
-            border-top-color: #FFC300; 
-        }
-        
-        /* CRO: New Style for High-Value Service Cards (Apostille/Loan Signing) */
-        .highlighted-service-card {
-            border: 2px solid #043C6E; /* Primary color border */
-            border-bottom: 6px solid #FFC300; /* Thicker accent bottom */
-            box-shadow: 0 15px 30px rgba(4, 60, 110, 0.3); /* Stronger shadow */
-        }
-        .highlighted-service-card:hover {
-            transform: translateY(-5px); /* Stronger lift */
-            border-top-color: #FFC300;
+        .footer-contact-link:hover {
+            color: #FF652F !important; /* Forces accent color on hover for links */
+            transform: translateX(5px);
         }
 
-        /* Service Card Icon Enhancement */
-        .service-icon-container {
-            background-color: transparent; 
-            border: 2px solid #043C6E; 
-            transition: all 0.3s ease;
-        }
-
-        /* Hover effect on the parent (.group) */
-        .group:hover .service-icon-container {
-            background-color: #043C6E; 
-            border-color: #FFC300; 
-        }
-
-        /* Style to ensure justified text */
-        .text-justify {
-            text-align: justify
-        }
-        
-        /* WhatsApp/Chat Icon Style */
-        .whatsapp-like-icon {
-            width: 1.75rem; 
-            height: 1.75rem; 
-            flex-shrink: 0;
-            margin-top: 0.25rem 
-            color: #25D366 
-        }
-
-        /* New Footer Styles */
-        .footer-link-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 0.75rem;
-            color: #e5e7eb; /* Gray 200/300 for normal text */
-            transition: color 0.2s;
-        }
-        .footer-link-item:hover {
-            color: #FFC300; /* Accent color on hover */
-        }
-        .footer-icon {
-            flex-shrink: 0;
-            margin-right: 0.75rem;
-            width: 1.25rem;
-            height: 1.25rem;
-            color: #FFC300; /* Accent color for icons */
-            margin-top: 2px;
-        }
-
-        /* Style for Social Media Icons to prevent color change on hover from parent */
-        .social-icon {
-            color: #e5e7eb; /* Default color for social icons */
-            transition: color 0.2s;
-        }
-        .social-icon:hover {
-            color: #FFC300; /* Accent color on hover */
-        }
-        
-        /* CUSTOM: New Footer Column Motion (Movement) */
-        .footer-col-motion {
-            padding: 0.75rem; 
-            border-radius: 0.5rem; 
+        /* MOVIMENTO PARA ITENS DE SERVIÇO NO RODAPÉ */
+        .footer-list-move {
             transition: all 0.3s ease-in-out;
-            background-color: transparent; 
-            border: 1px solid transparent; 
+            cursor: default;
+            position: relative;
         }
-        .footer-col-motion:hover {
-            transform: translateY(-3px); /* Subtle lift */
-            background-color: #04355f; /* Slightly lighter primary color for visual lift */
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-            border-color: #FFC300; /* Accent border on hover */
-            cursor: default; 
+        .footer-list-move:hover {
+            color: #FF652F; /* Cor accent/laranja no hover */
+            transform: translateX(5px); /* Deslocamento suave para a direita */
         }
-        
+        /* Garantir que o ícone mude de cor no hover do LI */
+        .footer-list-move:hover i {
+             color: #FF652F; 
+        }
+
     </style>
 
     <script type="application/ld+json">
@@ -326,438 +258,467 @@
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4BXLV9P"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <header class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center relative">
-            
-            <div class="flex flex-1 justify-start lg:hidden">
-                 <a href="tel:+18579953805" class="inline-flex items-center bg-accent text-primary font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-[#d69800] cta-button text-sm">
-                    <i data-lucide="phone-call" class="w-4 h-4"></i>
-                </a>
-            </div>
+    
+    <header class="bg-white shadow-xl sticky top-0 z-50 border-b-4 border-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center relative">
 
-            <nav class="hidden lg:flex items-center space-x-6 text-primary font-semibold">
-                <a href="#" class="hover:text-accent transition duration-200">Home</a>
-                <span class="text-gray-400">|</span>
-                <a href="#services" class="hover:text-accent transition duration-200">Services</a>
-                <span class="text-gray-400">|</span>
-                <a href="#reviews" class="hover:text-accent transition duration-200">Reviews</a>
-            </nav>
-
-            <a href="#" class="flex flex-col items-center absolute left-1/2 transform -translate-x-1/2">
-                <span class="text-2xl sm:text-3xl font-extrabold text-primary tracking-wider sm:tracking-widest leading-none headline-font border-b-2 border-primary pb-1">EDER PEREIRA</span>
-                <span class="text-xs sm:text-sm font-extrabold text-accent uppercase tracking-wide sm:tracking-widest mt-1">NOTARY PUBLIC</span>
+            <a href="#" class="flex items-center leading-none">
+                <span class="text-2xl sm:text-3xl font-extrabold text-primary tracking-tight headline-font pr-2 border-r-4 border-accent">EDER PEREIRA</span>
+                <span class="hidden sm:inline text-xl font-extrabold text-accent tracking-widest ml-2 headline-font uppercase">NOTARY PUBLIC</span>
+                <span class="sm:hidden text-xl font-extrabold text-accent tracking-wider ml-2 headline-font uppercase">NOTARY</span>
             </a>
             
-            <div class="flex flex-1 justify-end items-center">
-                 <nav class="hidden lg:flex items-center space-x-6 text-primary font-semibold">
-                    <span class="text-gray-400">|</span>
-                    <a href="#contact" class="hover:text-accent transition duration-200">Contact</a>
-                    <span class="text-gray-400">|</span>
-                    <a href="#faq" class="hover:text-accent transition duration-200">FAQ</a>
-                </nav>
-                <div class="hidden lg:flex space-x-3 items-center ml-6">
-                    <a href="tel:+18579953805" class="inline-flex items-center bg-accent text-primary font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-[#d69800] cta-button text-sm">
-                        <i data-lucide="phone-call" class="w-4 h-4 mr-2"></i> (857) 995-3805
-                    </a>
-                </div>
-            </div>
+            <nav class="hidden md:flex items-center space-x-6 text-primary font-medium text-base">
+                <a href="#services" class="hover:text-accent transition duration-200 font-semibold">Services</a>
+                <a href="#reviews" class="hover:text-accent transition duration-200 font-semibold">Reviews</a>
+                <a href="#contact" class="hover:text-accent transition duration-200 font-semibold">Contact</a>
+                <a href="#faq" class="hover:text-accent transition duration-200 font-semibold">FAQ</a>
+            </nav>
             
+            <div class="flex items-center space-x-4">
+                 <a href="tel:+18579953805" class="inline-flex items-center bg-accent text-white font-extrabold py-2 px-4 rounded-lg shadow-xl hover:bg-[#e55c2a] cta-button text-sm md:text-base uppercase tracking-wider transition duration-300">
+                    <i data-lucide="phone-call" class="w-4 h-4 mr-2"></i>
+                    <span class="hidden lg:inline text-xs mr-1 uppercase font-medium">Call Now:</span>
+                    <span class="text-lg md:text-xl font-extrabold leading-none">(857) 995-3805</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main>
-        
-        <section class="color-primary pt-10 pb-10 sm:pt-12 sm:pb-12 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
+    <section class="color-primary pt-16 pb-20 relative overflow-hidden" style="background-image: linear-gradient(rgba(10, 25, 49, 0.95), rgba(10, 25, 49, 0.95)), url('https://images.unsplash.com/photo-1517409545-095208b8b13d?fit=crop&w=1920&h=750&q=80'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <div class="trust-badge mx-auto md:mx-0 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current text-accent mr-2"></i> 5.0 STAR RATING ON GOOGLE
+                    </div>
                     
-                    <div class="text-center md:text-left">
-                        <i data-lucide="check-circle" class="w-12 h-12 mx-auto md:mx-0 mb-3 text-accent"></i>
+                    <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-4 headline-font leading-tight">
+                        Need Documents <span class="font-extrabold text-accent">Notarized TODAY</span>?
+                    </h1>
+                    
+                    <p class="text-xl sm:text-2xl font-light mb-8 text-justify opacity-90 border-l-4 border-accent pl-4">
+                        Specializing in Urgent Apostille Services, Real Estate Loan Closings, Estate Planning, and General Notary services. Handling all critical document needs across Danvers and the Northshore region with unmatched speed, accuracy, and guaranteed professionalism. We provide the expertise and efficiency new clients require to handle their most important documents flawlessly across Massachusetts.
+                    </p>
+                    
+                    </div>
+
+                <div class="flex flex-col justify-center md:justify-end">
+                    
+                    <div class="text-center mb-8 p-4 bg-yellow-50 rounded-xl border-4 border-red-500 shadow-xl mx-auto max-w-sm w-full">
+                        <p class="text-3xl sm:text-4xl font-extrabold text-accent uppercase tracking-wider animate-pulse">WALK-INS WELCOME</p>
+                        <p class="text-md sm:text-lg font-bold text-gray-800 uppercase mt-1">INSIDE STAPLES STORE</p>
+                        <p class="text-lg sm:text-xl text-primary font-extrabold mt-2">250 Independence Way, Danvers, MA</p> 
+                    </div>
+
+                    <div class="cta-hero-box mx-auto p-8 max-w-lg">
+                        <h2 class="text-3xl font-extrabold text-primary text-center mb-6 headline-font border-b-2 pb-3 border-gray-200">
+                            QUICK QUOTE REQUEST
+                        </h2>
                         
-                        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-3 headline-font">
-                            Danvers Notary: Quick Walk-in and Mobile Service in the <span class="font-extrabold text-accent">Northshore Region.</span>
-                        </h1>
-                        
-                        <p class="text-xl sm:text-xl font-light mb-6 text-justify">
-                            Don't let confusing paperwork slow you down. Whether you need 
-                            <strong class="text-accent font-extrabold">urgent international Apostille</strong>, 
-                            <strong class="text-accent font-extrabold">smooth real estate closing support</strong>, 
-                            <strong class="text-accent font-extrabold">certified translations</strong>, or 
-                            <strong class="text-accent font-extrabold">reliable mobile notary service</strong>, 
-                            we provide the expertise and efficiency new clients require to handle their most important documents flawlessly across Massachusetts.
-                        </p>
-                        
-                        <div class="mt-2 md:mt-0">
-                            <a href="tel:+18579953805" class="inline-flex items-center bg-accent text-primary font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-[#d69800] cta-button text-lg">
-                                <i data-lucide="phone-call" class="w-5 h-5 mr-2"></i> Call Now for Quick Scheduling
+                        <form action="https://formsubmit.co/eder.notary.ma@gmail.com" method="POST" class="space-y-4">
+                            <div>
+                                <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary">
+                            </div>
+                            <div>
+                                <input type="tel" name="phone" placeholder="Your Phone Number (Required)" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary">
+                            </div>
+                             <div>
+                                <select name="service_type" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary font-bold">
+                                    <option value="" disabled selected>Select Now Your Specialized Notary Service</option>
+                                    <option value="Apostille (URGENT)">Apostille (URGENT/International)</option>
+                                    <option value="Loan Signing / Real Estate">Loan Signing / Real Estate Closing</option>
+                                    <option value="Estate Planning">Estate Planning (Wills, POA, Trusts)</option>
+                                    <option value="Family Law / Sensitive Docs">Family Law / Sensitive Documents</option>
+                                    <option value="Mobile Notary">Mobile Notary (On-Demand)</option>
+                                    <option value="Walk-in (General Notary)">Walk-in (General Notary)</option>
+                                </select>
+                            </div>
+                            
+                            <input type="hidden" name="_subject" value="New Urgent Quote Request - Hero Section (EN)">
+
+                            <button type="submit" class="w-full inline-flex items-center justify-center bg-accent text-white font-extrabold text-xl py-4 px-8 rounded-xl cta-button hover:bg-[#e55c2a] uppercase tracking-wider">
+                                Get Quick Quote
+                            </button>
+                            <p class="text-center text-xs text-gray-700 font-medium mt-2">We respond promptly via call or WhatsApp.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+        <section class="py-12 sm:py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12">
+                     <span class="text-accent font-bold uppercase tracking-widest block mb-2">Social Proof & Metrics</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold text-primary mt-2 headline-font">Why Choose Eder Pereira Notary?</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+                    
+                    <div class="p-6 bg-gray-50 rounded-lg border-b-4 border-accent shadow-lg">
+                        <i data-lucide="star" class="w-10 h-10 text-accent fill-current mx-auto mb-3"></i>
+                        <p class="text-5xl font-extrabold text-primary headline-font">5.0</p>
+                        <p class="text-lg font-semibold text-gray-700 mt-1">Google Reviews</p>
+                        <p class="text-sm text-gray-500">Based on 100+ verified client ratings</p>
+                    </div>
+                    
+                    <div class="p-6 bg-gray-50 rounded-lg border-b-4 border-accent shadow-lg">
+                        <i data-lucide="zap" class="w-10 h-10 text-accent mx-auto mb-3"></i>
+                        <p class="text-5xl font-extrabold text-primary headline-font">Same-Day</p>
+                        <p class="text-lg font-semibold text-gray-700 mt-1">Notarized Documents</p>
+                        <p class="text-sm text-gray-500">Quick and accurate service.</p>
+                    </div>
+                    
+                     <div class="p-6 bg-gray-50 rounded-lg border-b-4 border-accent shadow-lg">
+                        <i data-lucide="car" class="w-10 h-10 text-accent mx-auto mb-3"></i>
+                        <p class="text-5xl font-extrabold text-primary headline-font">Mobile</p>
+                        <p class="text-lg font-semibold text-gray-700 mt-1">On-Demand Service</p>
+                        <p class="text-sm text-gray-500">Serving the entire Northshore region, MA</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="services" class="py-12 sm:py-20 color-primary text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <div class="section-header-box mx-auto bg-white text-primary p-4 sm:p-6 shadow-2xl">
+                        <span class="text-accent font-extrabold uppercase tracking-widest block text-base sm:text-lg">OUR MOST REQUESTED SERVICES</span>
+                        <h2 class="text-4xl sm:text-6xl font-extrabold text-primary mt-2 headline-font leading-tight">Fast Solutions for Critical Documents</h2>
+                        <p class="text-lg font-medium text-gray-600 mt-2">Specialized in Complex, High-Value Notarizations</p>
+                    </div>
+                </div>
+                
+                <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+
+                    <div class="p-8 bg-white text-primary shadow-xl service-card-value group">
+                        <div class="flex justify-between items-start">
+                             <i data-lucide="stamp" class="text-accent w-10 h-10 mb-4"></i>
+                             <span class="price-tag">URGENT</span>
+                        </div>
+                        <p class="font-extrabold text-2xl text-primary headline-font mb-2">Apostille Services</p>
+                        <p class="text-gray-600 text-base">International document validation for use abroad. Fast and priority service available to meet your deadlines.</p>
+                         <div class="mt-4">
+                            <a href="tel:+18579953805" class="text-accent font-bold inline-flex items-center hover:underline">
+                                Request Urgent Quote <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                             </a>
                         </div>
                     </div>
 
-                    <div class="flex justify-center md:justify-end">
-                        
-                        <div class="cta-hero-box mx-auto p-6 max-w-lg">
-                            <h2 class="text-2xl font-extrabold text-center mb-6 border-b pb-3 border-gray-200">
-                                QUICK QUOTE & WALK-IN SERVICE
-                            </h2>
-                            <div class="text-center mb-6">
-                                <p class="text-xl font-extrabold text-red-700 mt-1">INSIDE STAPLES - COWORKING OFFICES</p>
-                                <p class="text-lg font-bold text-primary mt-1">250 Independence Way, Danvers, MA 01923</p> 
-                                <p class="text-sm text-gray-600 mt-1">(No appointment needed)</p>
-                            </div>
-                            
-                            <form action="https://formsubmit.co/eder.notary.ma@gmail.com" method="POST" class="space-y-4">
-                                <div>
-                                    <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary">
-                                </div>
-                                <div>
-                                    <input type="tel" name="phone" placeholder="Your Phone Number (Required)" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary">
-                                </div>
-                                 <div>
-                                    <select name="service_type" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary">
-                                        <option value="" disabled selected>Which service do you need?</option>
-                                        <option value="Apostille (URGENT)">Apostille (URGENT)</option>
-                                        <option value="Loan Signing / Real Estate">Loan Signing / Real Estate Closing</option>
-                                        <option value="Mobile Notary (Specify Location)">Mobile Notary (Specify Location)</option>
-                                        <option value="Walk-in (Danvers Office)">Walk-in (Danvers Office)</option>
-                                        <option value="General Notary">General (Jurat, POA, Will)</option>
-                                    </select>
-                                </div>
-                                
-                                <input type="hidden" name="_subject" value="New Quick Quote Request - Hero Section">
-
-                                <button type="submit" class="w-full inline-flex items-center justify-center bg-accent text-primary font-bold text-lg py-3 px-8 rounded-xl cta-button hover:bg-[#d69800]">
-                                    Request a Quote
-                                </button>
-                                <p class="text-center text-sm text-gray-700">We will respond by phone or WhatsApp in minutes!</p>
-                            </form>
-                            </div>
+                    <div class="p-8 bg-white text-primary shadow-xl service-card-value group">
+                         <div class="flex justify-between items-start">
+                             <i data-lucide="home" class="text-accent w-10 h-10 mb-4"></i>
+                             <span class="price-tag">EXPERT</span>
+                        </div>
+                        <p class="font-extrabold text-2xl text-primary headline-font mb-2">Loan Signing Closings</p>
+                        <p class="text-gray-600 text-base">Mortgages, refinances, reverse mortgages, and all property transfer signings. Flawless completion guaranteed.</p>
+                        <div class="mt-4">
+                            <a href="#contact" class="text-accent font-bold inline-flex items-center hover:underline">
+                                Schedule Your Closing <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="p-8 bg-white text-primary shadow-xl service-card-value group">
+                        <div class="flex justify-between items-start">
+                             <i data-lucide="file-text" class="text-accent w-10 h-10 mb-4"></i>
+                             <span class="price-tag">COMPLEX</span>
+                        </div>
+                        <p class="font-extrabold text-2xl text-primary headline-font mb-2">Estate Planning</p>
+                        <p class="text-gray-600 text-base">Notarizing Wills, Trusts, Medical Directives, and Powers of Attorney. Ensuring legally sound execution.</p>
+                        <div class="mt-4">
+                            <a href="#contact" class="text-accent font-bold inline-flex items-center hover:underline">
+                                Book Estate Notarization <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 bg-white text-primary shadow-xl service-card-value group">
+                        <div class="flex justify-between items-start">
+                             <i data-lucide="users" class="text-accent w-10 h-10 mb-4"></i>
+                             <span class="price-tag">SENSITIVE</span>
+                        </div>
+                        <p class="font-extrabold text-2xl text-primary headline-font mb-2">Family Law Documents</p>
+                        <p class="text-gray-600 text-base">Prenuptial Agreements, Divorce Decrees, Child Custody forms, and Affidavits of Support/Consent.</p>
+                        <div class="mt-4">
+                            <a href="#contact" class="text-accent font-bold inline-flex items-center hover:underline">
+                                Discreet Consultation <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-        </section>
-     
-        <section id="reviews" class="py-10 sm:py-12 color-primary">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <div class="text-center mb-8">
-                    <div class="section-header-box mx-auto"> 
-                        <span class="text-accent font-semibold uppercase tracking-wider block">What Our Clients Say</span>
-                        <h2 class="text-4xl font-extrabold text-primary mt-2">Check Our <span class="font-extrabold">5-Star Google Reviews!</span></h2>
+                 <div class="text-center mt-12 pt-12 border-t border-accent/20">
+                    <h3 class="text-3xl font-extrabold text-white mb-6 headline-font">Additional Comprehensive Services Offered:</h3>
+                    <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 text-left">
+                        <div class="p-4 bg-white/10 rounded-lg shadow-xl backdrop-blur-sm border-l-4 border-accent transition hover:bg-white/20">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-accent mb-2"></i>
+                            <p class="font-extrabold text-lg text-white">Mobile Notary Service</p>
+                        </div>
+                        <div class="p-4 bg-white/10 rounded-lg shadow-xl backdrop-blur-sm border-l-4 border-accent transition hover:bg-white/20">
+                            <i data-lucide="book-open" class="w-6 h-6 text-accent mb-2"></i>
+                            <p class="font-extrabold text-lg text-white">Certified Copies & Translations</p>
+                        </div>
+                        <div class="p-4 bg-white/10 rounded-lg shadow-xl backdrop-blur-sm border-l-4 border-accent transition hover:bg-white/20">
+                            <i data-lucide="signature" class="w-6 h-6 text-accent mb-2"></i>
+                            <p class="font-extrabold text-lg text-white">Acknowledgments & Signatures</p>
+                        </div>
+                        <div class="p-4 bg-white/10 rounded-lg shadow-xl backdrop-blur-sm border-l-4 border-accent transition hover:bg-white/20">
+                            <i data-lucide="hand-metal" class="w-6 h-6 text-accent mb-2"></i>
+                            <p class="font-extrabold text-lg text-white">Power of Attorney (All Types)</p>
+                        </div>
+                        <div class="p-4 bg-white/10 rounded-lg shadow-xl backdrop-blur-sm border-l-4 border-accent transition hover:bg-white/20">
+                            <i data-lucide="plane" class="w-6 h-6 text-accent mb-2"></i>
+                            <p class="font-extrabold text-lg text-white">Authorization for Minor Travel</p>
+                        </div>
+                        <div class="p-4 bg-white/10 rounded-lg shadow-xl backdrop-blur-sm border-l-4 border-accent transition hover:bg-white/20">
+                            <i data-lucide="briefcase" class="w-6 h-6 text-accent mb-2"></i>
+                            <p class="font-extrabold text-lg text-white">All General Notary Needs</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="highlight-box max-w-lg mx-auto mb-12 text-center">
-                    <p class="text-xl font-semibold mb-3">Don't just take our word for it—Check our official Google Reviews!</p>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-12 sm:py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                
+                <h3 class="text-4xl font-extrabold text-primary mb-4 headline-font">What Our Clients Say</h3>
+                <p class="text-xl text-gray-700 font-light mb-8 max-w-2xl mx-auto">
+                    Read some of the authentic 5-star feedback from clients who chose us for their urgent notarization needs.
+                </p>
+                
+                <a href="https://g.page/r/CbkeSVWsQzm4EBM/review" target="_blank" class="inline-flex items-center bg-accent text-white font-extrabold py-4 px-10 rounded-full shadow-xl hover:bg-[#e55c2a] cta-button text-xl uppercase tracking-wider transition duration-300 mb-12">
+                    <i data-lucide="external-link" class="w-6 h-6 mr-2"></i> VIEW ALL 5.0 STAR GOOGLE REVIEWS
+                </a>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
                     
-                    <div class="flex justify-center items-center space-x-4 mb-4">
-                        <div class="text-3xl text-accent">
-                            <i data-lucide="star" class="inline w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="inline w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="inline w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="inline w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="inline w-6 h-6 fill-current"></i>
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-accent/70">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500"></i>
+                            </div>
+                            <div class="text-blue-600 font-bold text-sm flex items-center">
+                                <i data-lucide="badge-check" class="w-4 h-4 fill-current text-blue-600 mr-1"></i>
+                                Verified
+                            </div>
                         </div>
-                        <span class="text-4xl font-extrabold text-accent">5.0</span>
-                        <span class="text-2xl text-gray-700">/ 5.0</span>
+                        <p class="text-lg font-bold text-primary mb-2 italic line-clamp-4">"Absolutely the best service for Apostille in Massachusetts. Eder was fast, professional, and knew exactly what was needed for my international documents. Highly recommend for urgent needs!"</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-3">
+                            Maria S. (
+                            <span class="google-blue">G</span>
+                            <span class="google-red">o</span>
+                            <span class="google-yellow">o</span>
+                            <span class="google-blue">g</span>
+                            <span class="google-green">l</span>
+                            <span class="google-red">e</span>
+                            )
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-accent/70">
+                         <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500"></i>
+                            </div>
+                            <div class="text-blue-600 font-bold text-sm flex items-center">
+                                <i data-lucide="badge-check" class="w-4 h-4 fill-current text-blue-600 mr-1"></i>
+                                Verified
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold text-primary mb-2 italic line-clamp-4">"Used Eder for a complex home refinancing closing. He was meticulous, patient, and extremely knowledgeable about the loan documents. Made the entire process stress-free for the client. Top-tier notary!"</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-3">
+                             David P. (
+                            <span class="google-blue">G</span>
+                            <span class="google-red">o</span>
+                            <span class="google-yellow">o</span>
+                            <span class="google-blue">g</span>
+                            <span class="google-green">l</span>
+                            <span class="google-red">e</span>
+                            )
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-accent/70">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500"></i>
+                            </div>
+                            <div class="text-blue-600 font-bold text-sm flex items-center">
+                                <i data-lucide="badge-check" class="w-4 h-4 fill-current text-blue-600 mr-1"></i>
+                                Verified
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold text-primary mb-2 italic line-clamp-4">"The mobile service was a lifesaver. He came to my home in Peabody within an hour. Professional, quick, and very friendly. The convenience alone deserves five stars. Will use again for sure."</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-3">
+                            Thomas L. (
+                            <span class="google-blue">G</span>
+                            <span class="google-red">o</span>
+                            <span class="google-yellow">o</span>
+                            <span class="google-blue">g</span>
+                            <span class="google-green">l</span>
+                            <span class="google-red">e</span>
+                            )
+                        </p>
                     </div>
                     
-                    <p class="text-lg text-gray-700 font-medium">Based on 100+ verified Google Reviews</p>
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-accent/70">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500 mr-0.5"></i>
+                                 <i data-lucide="star" class="w-5 h-5 fill-current text-yellow-500"></i>
+                            </div>
+                             <div class="text-blue-600 font-bold text-sm flex items-center">
+                                <i data-lucide="badge-check" class="w-4 h-4 fill-current text-blue-600 mr-1"></i>
+                                Verified
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold text-primary mb-2 italic line-clamp-4">"Had a power of attorney document notarized at the Danvers office. Fast in and out service. Clear pricing and very helpful staff. The best option for a walk-in notary in the Northshore area. Five stars!"</p>
+                        <p class="text-sm font-semibold text-gray-600 mt-3">
+                            Jessica C. (
+                            <span class="google-blue">G</span>
+                            <span class="google-red">o</span>
+                            <span class="google-yellow">o</span>
+                            <span class="google-blue">g</span>
+                            <span class="google-green">l</span>
+                            <span class="google-red">e</span>
+                            )
+                        </p>
+                    </div>
                     
-                    <a href="https://g.page/r/CbkeSVWsQzm4EBM/review" target="_blank" class="mt-4 inline-flex items-center text-primary hover:text-accent transition duration-300 font-bold">
-                        Read All Reviews <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
-                    </a>
                 </div>
-              
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 sm:py-20 color-primary text-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-10">
+                    <h2 class="text-5xl font-extrabold text-accent mb-4 headline-font">Don't Wait. Act Now.</h2>
+                    <p class="text-2xl font-light mb-8">Time is critical. Speak with a notarization expert immediately.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-xl shadow-2xl border-b-8 border-accent">
+                    <h3 class="text-3xl font-bold text-primary flex items-center mb-8 headline-font">
+                        <i data-lucide="calendar-check" class="w-8 h-8 mr-3 text-accent"></i> Direct Appointment Request Form
+                    </h3>
                     
-                    <div class="bg-white p-6 rounded-xl shadow-2xl transition duration-300 transform hover:-translate-y-1 hover:shadow-primary/50 col-span-1">
-                        <div class="reviewer-info-header flex justify-between items-start">
-                            <p class="font-semibold text-xs text-primary">Ange Muteba (6 days ago)</p>
-                            <span class="text-xs font-bold flex items-center space-x-0.5 pt-[1px]" style="letter-spacing: -1px;">
-                                <span style="color: #4285F4;">G</span>
-                                <span style="color: #DB4437;">o</span>
-                                <span style="color: #F4B400;">o</span>
-                                <span style="color: #4285F4;">g</span>
-                                <span style="color: #0F9D58;">l</span>
-                                <span style="color: #DB4437;">e</span>
-                            </span>
+                    <form action="https://formsubmit.co/eder.notary.ma@gmail.com" method="POST" class="space-y-6">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300">
+                            <input type="tel" name="phone" placeholder="Phone Number (WhatsApp Recommended)" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300">
+                            <input type="email" name="email" placeholder="Email Address" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300">
+                             <select name="service_type" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary font-bold">
+                                <option value="" disabled selected>Select Your Urgent Service</option>
+                                <option value="Apostille (URGENT)">Apostille (URGENT/International)</option>
+                                <option value="Loan Signing / Real Estate">Loan Signing / Real Estate Closing</option>
+                                <option value="Estate Planning">Estate Planning (Wills, POA, Trusts)</option>
+                                <option value="Family Law / Sensitive Docs">Family Law / Sensitive Documents</option>
+                                <option value="Mobile Notary">Mobile Notary (On-Demand)</option>
+                                <option value="Walk-in (General Notary)">Walk-in (General Notary)</option>
+                            </select>
                         </div>
-                        <div class="flex items-center mb-3">
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <span class="verified-badge ml-2 flex items-center justify-center w-5 h-5">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                                    <circle cx="12" cy="12" r="11" fill="#1D9BF0" stroke="white" stroke-width="1.5"/>
-                                    <path d="M9.86 16.59L6.23 12.96L7.39 11.8L9.86 14.27L17.77 6.36L18.93 7.52L9.86 16.59Z" fill="white"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <p class="text-gray-700 italic text-sm text-justify">
-                            "I totally recommend this service! Eder was super patient and helpful, and everything was done fast and professionally. Thank Thank you so much!"
-                        </p>
-                    </div>
+                        
+                        <textarea name="message" placeholder="Details: Document type, urgency, and mobile service location." rows="4" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300"></textarea>
+                        
+                        <input type="hidden" name="_subject" value="New High-Converting Appointment Request (EN)">
 
-                    <div class="bg-white p-6 rounded-xl shadow-2xl transition duration-300 transform hover:-translate-y-1 hover:shadow-primary/50 col-span-1">
-                        <div class="reviewer-info-header flex justify-between items-start">
-                            <p class="font-semibold text-xs text-primary">Chris Gendron (4 weeks ago)</p>
-                            <span class="text-xs font-bold flex items-center space-x-0.5 pt-[1px]" style="letter-spacing: -1px;">
-                                <span style="color: #4285F4;">G</span>
-                                <span style="color: #DB4437;">o</span>
-                                <span style="color: #F4B400;">o</span>
-                                <span style="color: #4285F4;">g</span>
-                                <span style="color: #0F9D58;">l</span>
-                                <span style="color: #DB4437;">e</span>
-                            </span>
-                        </div>
-                        <div class="flex items-center mb-3">
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                             <span class="verified-badge ml-2 flex items-center justify-center w-5 h-5">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                                    <circle cx="12" cy="12" r="11" fill="#1D9BF0" stroke="white" stroke-width="1.5"/>
-                                    <path d="M9.86 16.59L6.23 12.96L7.39 11.8L9.86 14.27L17.77 6.36L18.93 7.52L9.86 16.59Z" fill="white"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <p class="text-gray-700 italic text-sm text-justify">
-                            "Eder was great -- quick, efficient, personable, professional -- everything you want when dealing with time-sensitive docs! I would highly recommend using him!!"
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-xl shadow-2xl transition duration-300 transform hover:-translate-y-1 hover:shadow-primary/50 col-span-1">
-                        <div class="reviewer-info-header flex justify-between items-start">
-                            <p class="font-semibold text-xs text-primary">Icaro Saraiva (9 weeks ago)</p>
-                            <span class="text-xs font-bold flex items-center space-x-0.5 pt-[1px]" style="letter-spacing: -1px;">
-                                <span style="color: #4285F4;">G</span>
-                                <span style="color: #DB4437;">o</span>
-                                <span style="color: #F4B400;">o</span>
-                                <span style="color: #4285F4;">g</span>
-                                <span style="color: #0F9D58;">l</span>
-                                <span style="color: #DB4437;">e</span>
-                            </span>
-                        </div>
-                        <div class="flex items-center mb-3">
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-current text-accent"></i>
-                            <span class="verified-badge ml-2 flex items-center justify-center w-5 h-5">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                                    <circle cx="12" cy="12" r="11" fill="#1D9BF0" stroke="white" stroke-width="1.5"/>
-                                    <path d="M9.86 16.59L6.23 12.96L7.39 11.8L9.86 14.27L17.77 6.36L18.93 7.52L9.86 16.59Z" fill="white"/>
-                                </svg>
-                            </span>
-                        </div>
-                        <p class="text-gray-700 italic text-sm text-justify">
-                            "Eder is an outstanding Notary Public. Professional, reliable, and very efficient. He explains everything clearly and makes the process smooth and stress-free. Highly recommended!"
-                        </p>
-                    </div>
+                        <button type="submit" class="w-full inline-flex items-center justify-center bg-accent text-white font-extrabold text-xl py-4 px-8 rounded-xl cta-button hover:bg-[#e55c2a] uppercase tracking-wider">
+                            SUBMIT REQUEST & RECEIVE PRIORITY CALL
+                        </button>
+                        
+                    </form>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="pt-10 sm:pt-12 pb-10 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="faq" class="py-12 sm:py-20 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
                 <div class="text-center mb-12">
-                    <div class="highlight-box mx-auto">
-                        <span class="text-accent font-semibold uppercase tracking-wider block">Your Trusted Partner for Every Critical Document</span>
-                        <h2 class="text-4xl font-extrabold mt-2">Mastering Complexity: Your Full-Service Notary Experts</h2>
-                    </div>
-                </div>
-                
-                <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-
-                    <div class="p-4 rounded-lg bg-white border border-gray-200 shadow-md service-card-hover group">
-                        <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="file-check-2" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">Acknowledgments & Signatures</p>
-                        <p class="text-gray-600 text-xs mt-1">Verifying signers' identity and witnessing signatures on various documents.</p>
-                    </div>
-                    
-                    <div class="p-4 rounded-lg bg-white border border-gray-200 shadow-md service-card-hover group">
-                         <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="gavel" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">Jurat, Oaths & Affidavits</p>
-                        <p class="text-gray-600 text-xs mt-1">Administering sworn statements, oaths, and statutory declarations.</p>
-                    </div>
-                    
-                    <div class="p-4 rounded-lg bg-white shadow-md service-card-hover group highlighted-service-card">
-                        <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="home" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">Real State Documents & Loan Signings Closings</p>
-                        <p class="text-gray-600 text-xs mt-1">Facilitating mortgage, refinance, property transfer, and other real estate document signings.</p>
-                    </div>
-                    
-                    <div class="p-4 rounded-lg bg-white border border-gray-200 shadow-md service-card-hover group">
-                        <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="briefcase-business" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">Power of Attorney, Wills, Trusts & Medical Directives</p>
-                        <p class="text-gray-600 text-xs mt-1">Notarizing crucial estate planning, medical, and power of attorney documents.</p>
-                    </div>
-                    
-                    <div class="p-4 rounded-lg bg-white border border-gray-200 shadow-md service-card-hover group">
-                        <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="clipboard-check" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">All General Notary Needs</p>
-                        <p class="text-gray-600 text-xs mt-1">Notarizing all other documents, including travel consents, leases, school forms, and business paperwork.</p>
-                    </div>
-                    
-                    <div class="p-4 rounded-lg bg-white border border-gray-200 shadow-md service-card-hover group">
-                        <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="car" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">Mobile Notary Service</p>
-                        <p class="text-gray-600 text-xs mt-1">Convenient notarization at your home, office, or hospital (by appointment).</p>
-                    </div>
-                    
-                    <div class="p-4 rounded-lg bg-white shadow-md service-card-hover group highlighted-service-card">
-                        <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="stamp" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">Apostille Services</p>
-                        <p class="text-gray-600 text-xs mt-1">International validation for US-issued public documents.</p>
-                    </div>
-                    
-                    <div class="p-4 rounded-lg bg-white border border-gray-200 shadow-md service-card-hover group">
-                        <div class="service-icon-container mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-300">
-                            <i data-lucide="copy-check" class="text-accent w-7 h-7 transition-colors duration-300"></i>
-                        </div>
-                        <p class="font-extrabold text-gray-900 text-base">Certified Copies & Translations</p>
-                        <p class="text-gray-600 text-xs mt-1">Official copies and certified translations (Portuguese & Spanish).</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-10 sm:py-12 bg-gray-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="highlight-box mx-auto mb-10">
-                        <h2 class="text-4xl font-extrabold">Need a Notary Now? Contact Us.</h2>
+                    <div class="section-header-box mx-auto">
+                        <span class="text-accent font-bold uppercase tracking-widest block">Frequently Asked Questions</span>
+                        <h2 class="text-4xl sm:text-5xl font-extrabold text-primary mt-2 headline-font">Everything You Need to Know</h2>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-1 gap-12 mt-12">
-                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4 border-accent mx-auto w-full">
-                        <h3 class="text-2xl font-bold text-primary flex items-center mb-6">
-                            <i data-lucide="calendar-check" class="w-6 h-6 mr-3 text-accent"></i> Schedule Your Service
-                        </h3>
-                        
-                        <form action="https://formsubmit.co/eder.notary.ma@gmail.com" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            
-                            <div class="space-y-4">
-                                <div>
-                                    <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:ring-primary">
-                                </div>
-                                <div>
-                                    <input type="email" name="email" placeholder="Your Email Address" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:ring-primary">
-                                </div>
-                                
-                                <div>
-                                    <select name="service_type" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:ring-primary">
-                                        <option value="" disabled selected>Which service do you need?</option>
-                                        <option value="Apostille (URGENT)">Apostille (URGENT)</option>
-                                        <option value="Loan Signing / Real Estate">Loan Signing / Real Estate Closing</option>
-                                        <option option value="Mobile Notary (Specify Location)">Mobile Notary (Specify Location)</option>
-                                        <option value="Walk-in (Danvers Office)">Walk-in (Danvers Office)</option>
-                                        <option value="General Notary">General (Jurat, POA, Will)</option>
-                                    </select>
-                                </div>
-                                
-                                <div>
-                                    <input type="tel" name="phone" placeholder="Your Phone Number (Required)" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:ring-primary">
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <textarea name="message" placeholder="Tell us about your notarial need (e.g., POA, Loan Signing, Mobile Service requested location)" rows="1" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:ring-primary h-full min-h-[12rem] md:min-h-0"></textarea>
-                            </div>
-                            
-                            <input type="hidden" name="_subject" value="New Notary Appointment Request from Website (Detailed Form)">
-
-                            <button type="submit" class="w-full inline-flex items-center justify-center bg-accent text-primary font-bold text-lg py-3 px-8 rounded-xl cta-button hover:bg-[#d69800] col-span-full">
-                                Send Request
-                            </button>
-                            
-                        </form>
-                        </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="faq" class="py-10 sm:py-12 color-secondary">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="text-center mb-8 max-w-4xl mx-auto">
-                    <div class="highlight-box mx-auto">
-                        <span class="text-accent font-semibold uppercase tracking-wider block">Questions? We have Answers.</span>
-                        <h2 class="text-4xl font-extrabold mt-2">Frequently Asked Questions</h2>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg divide-y divide-gray-200 mt-8 max-w-full mx-auto">
+                <div class="bg-white rounded-xl shadow-xl divide-y divide-gray-100 mt-8">
                     
-                    <div class="p-3 sm:p-4">
+                    <div class="p-4 sm:p-6">
                         <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3 class="text-lg font-semibold text-primary">Do I need an appointment for the Danvers office?</h3>
-                            <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary"></i>
+                            <h3 class="text-lg font-bold text-primary flex justify-between items-center">
+                                Do I need an appointment for the Danvers office?
+                                <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-accent transition-transform duration-300"></i>
+                            </h3>
                         </div>
-                        <div class="faq-answer">
-                            <p class="text-justify">No, appointments are generally not required for our Danvers walk-in office (inside Staples). You can visit us during our operating hours for quick notarization. However, we always recommend calling ahead for complex documents or to confirm our immediate availability.</p>
+                        <div class="faq-answer-content">
+                            <p class="text-justify text-gray-700 pt-2">Appointments are not generally required for general notary services at our Danvers office (inside Staples). You may walk in during business hours. However, for Apostille or Loan Signings, or to ensure immediate availability, we recommend calling ahead first.</p>
                         </div>
                     </div>
 
-                    <div class="p-3 sm:p-4">
+                    <div class="p-4 sm:p-6">
                         <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3 class="text-lg font-semibold text-primary">What form of ID is required for notarization?</h3>
-                            <div class="faq-icon-container">
-                                <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary"></i>
-                            </div>
+                            <h3 class="text-lg font-bold text-primary flex justify-between items-center">
+                                What forms of ID are accepted for notarization?
+                                <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-accent transition-transform duration-300"></i>
+                            </h3>
                         </div>
-                        <div class="faq-answer">
-                            <p class="text-justify">You must present a valid, unexpired government-issued photo ID (such as a US Driver’s License, Passport, or state ID card) to verify your identity. The ID must match the name on the document exactly.</p>
+                        <div class="faq-answer-content">
+                            <p class="text-justify text-gray-700 pt-2">You must present a valid, unexpired government-issued photo identification (such as a US Driver’s License, Passport, or state ID card) to verify your identity. The name on the ID must exactly match the name on the document being signed.</p>
                         </div>
                     </div>
 
-                    <div class="p-3 sm:p-4">
+                    <div class="p-4 sm:p-6">
                         <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3 class="text-lg font-semibold text-primary">What is your mobile notary service area?</h3>
-                            <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary"></i>
+                            <h3 class="text-lg font-bold text-primary flex justify-between items-center">
+                                How far does your mobile service travel?
+                                <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-accent transition-transform duration-300"></i>
+                            </h3>
                         </div>
-                        <div class="faq-answer">
-                            <p class="text-justify">Our primary mobile service area covers the entire Northshore Region of Massachusetts, including cities and towns like Danvers, Peabody, Salem, Beverly, Lynn, Saugus, and surrounding areas. We are willing to travel—please contact us with your specific location.</p>
+                        <div class="faq-answer-content">
+                            <p class="text-justify text-gray-700 pt-2">Our primary service area covers the entire Northshore Region of Massachusetts, including Danvers, Peabody, Salem, Beverly, Lynn, and surrounding cities. Please contact us with your exact address to confirm the travel fee.</p>
                         </div>
                     </div>
-
-                    <div class="p-3 sm:p-4">
+                    
+                    <div class="p-4 sm:p-6">
                         <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3 class="text-lg font-semibold text-primary">Can a Notary Public give me legal advice about my documents?</h3>
-                            <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary"></i>
+                            <h3 class="text-lg font-bold text-primary flex justify-between items-center">
+                                Can you give me legal advice about my document?
+                                <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-accent transition-transform duration-300"></i>
+                            </h3>
                         </div>
-                        <div class="faq-answer">
-                            <p class="text-justify">No. By Massachusetts law, a Notary Public is prohibited from giving legal advice, drafting legal documents, or making interpretations about the content of your documents. We are impartial witnesses responsible only for verifying identities and witnessing signatures.</p>
+                        <div class="faq-answer-content">
+                            <p class="text-justify text-gray-700 pt-2">No. By Massachusetts law, a Notary Public is strictly prohibited from offering legal advice, drafting legal documents, or making interpretations about the content of your documents. We only verify identities and witness signatures.</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="mt-8 text-center max-w-4xl mx-auto">
-                    <p class="text-lg text-gray-700">Can't find your answer? <a href="#contact" class="text-primary font-bold hover:text-accent underline">Contact us directly.</a></p>
                 </div>
 
             </div>
@@ -766,90 +727,71 @@
     </main>
 
     <a href="tel:+18579953805" class="fab" aria-label="Call Eder Pereira Notary">
-        <i data-lucide="phone-call" class="w-8 h-8"></i> </a>
+        <i data-lucide="phone-call" class="w-10 h-10"></i> </a>
 
     <footer class="color-primary py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
             
-            <div class="flex flex-col items-center justify-center text-center mb-8 border-b border-white/20 pb-8">
-                <a href="#" class="flex flex-col items-center">
-                    <span class="text-4xl sm:text-5xl font-extrabold text-white tracking-widest leading-none headline-font border-b-4 border-accent pb-1">EDER PEREIRA</span>
-                    <span class="text-sm sm:text-base font-extrabold text-accent uppercase tracking-widest mt-2">NOTARY PUBLIC</span>
-                </a>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8 text-center md:text-left">
                 
-                <div class="footer-col-motion">
-                    <h4 class="text-xl font-bold text-accent mb-4 border-b border-accent/50 pb-2">Contact Us</h4>
-                    <address class="not-italic text-sm">
-                        <a href="tel:+18579953805" class="footer-link-item">
-                            <i data-lucide="phone-call" class="footer-icon"></i>
-                            +1 (857) 995-3805
-                        </a>
-                        <a href="https://wa.me/18579953805" target="_blank" class="footer-link-item">
-                            <i data-lucide="message-square" class="footer-icon" style="color:#25D366;"></i>
-                            +1 (857) 995-3805 (WhatsApp)
-                        </a>
-                        <a href="mailto:eder.notary.ma@gmail.com" class="footer-link-item">
-                            <i data-lucide="mail" class="footer-icon"></i>
-                            eder.notary.ma@gmail.com
-                        </a>
-                        <a href="https://www.google.com/maps/search/?api=1&query=250+Independence+Way,+Danvers,+MA+01923" target="_blank" class="footer-link-item">
-                             <i data-lucide="map-pin" class="footer-icon"></i>
-                             250 Independence Way, Danvers, MA 01923
-                        </a>
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-5 border-b-2 border-accent/50 pb-2 headline-font">Contact Details</h4>
+                    <address class="not-italic text-base space-y-3 text-gray-300">
+                        <p>
+                            <a href="tel:+18579953805" class="flex items-center justify-center md:justify-start footer-contact-link">
+                                <i data-lucide="phone-call" class="w-5 h-5 mr-3 inline-block text-accent"></i>
+                                +1 (857) 995-3805 (Call/Text)
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://wa.me/18579953805" target="_blank" class="flex items-center justify-center md:justify-start footer-contact-link">
+                                <i data-lucide="message-square" class="w-5 h-5 mr-3 inline-block text-accent"></i>
+                                +1 (857) 995-3805 (Priority WhatsApp)
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:eder.notary.ma@gmail.com" class="flex items-center justify-center md:justify-start footer-contact-link">
+                                <i data-lucide="mail" class="w-5 h-5 mr-3 inline-block text-accent"></i>
+                                eder.notary.ma@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=250+Independence+Way,+Danvers,+MA+01923" target="_blank" class="flex items-center justify-center md:justify-start footer-contact-link">
+                                 <i data-lucide="map-pin" class="w-5 h-5 mr-3 inline-block text-accent"></i>
+                                 Office Location: 250 Independence Way, Danvers, MA
+                            </a>
+                        </p>
                     </address>
                 </div>
 
-                <div class="footer-col-motion">
-                    <h4 class="text-xl font-bold text-accent mb-4 border-b border-accent/50 pb-2">Our Core Services</h4>
-                    <ul class="text-sm space-y-2">
-                        <li class="flex items-center text-gray-300"><i data-lucide="file-check-2" class="w-4 h-4 mr-2 text-accent"></i> Acknowledgments & Signatures</li>
-                        <li class="flex items-center text-gray-300"><i data-lucide="gavel" class="w-4 h-4 mr-2 text-accent"></i> Jurat, Oaths & Affidavits</li>
-                        <li class="flex items-center text-gray-300"><i data-lucide="home" class="w-4 h-4 mr-2 text-accent"></i> Real State Documents & Loan Signings Closings</li>
-                        <li class="flex items-center text-gray-300"><i data-lucide="briefcase-business" class="w-4 h-4 mr-2 text-accent"></i> Power of Attorney, Wills, Trusts & Medical Directives</li>
-                        <li class="flex items-center text-gray-300"><i data-lucide="clipboard-check" class="w-4 h-4 mr-2 text-accent"></i> All General Notary Needs</li>
-                        <li class="flex items-center text-gray-300"><i data-lucide="car" class="w-4 h-4 mr-2 text-accent"></i> Mobile Notary Service</li>
-                        <li class="flex items-center text-gray-300"><i data-lucide="stamp" class="w-4 h-4 mr-2 text-accent"></i> Apostille Services</li>
-                        <li class="flex items-center text-gray-300"><i data-lucide="copy-check" class="w-4 h-4 mr-2 text-accent"></i> Certified Translations</li>
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-5 border-b-2 border-accent/50 pb-2 headline-font">Key Services</h4>
+                    <ul class="text-base space-y-2 text-gray-300">
+                        <li class="flex items-center justify-center md:justify-start footer-list-move"><i data-lucide="stamp" class="w-4 h-4 mr-3 text-accent"></i> Urgent Apostille & International Docs</li>
+                        <li class="flex items-center justify-center md:justify-start footer-list-move"><i data-lucide="home" class="w-4 h-4 mr-3 text-accent"></i> Real Estate (Loan Closings)</li>
+                        <li class="flex items-center justify-center md:justify-start footer-list-move"><i data-lucide="file-text" class="w-4 h-4 mr-3 text-accent"></i> Estate & Family Law Notarization</li>
+                        <li class="flex items-center justify-center md:justify-start footer-list-move"><i data-lucide="car" class="w-4 h-4 mr-3 text-accent"></i> Mobile Notary Service (Northshore)</li>
                     </ul>
                 </div>
 
-                <div class="footer-col-motion">
-                    <h4 class="text-xl font-bold text-accent mb-4 border-b border-accent/50 pb-2">Follow Us</h4>
-                    <div class="flex space-x-4">
-                         <a href="https://www.facebook.com/profile.php?id=61561466572367" target="_blank" class="social-icon hover:text-accent transition duration-300" aria-label="Facebook">
-                            <i data-lucide="facebook" class="w-7 h-7"></i>
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-5 border-b-2 border-accent/50 pb-2 headline-font">Social & Legal</h4>
+                    <div class="flex space-x-6 mb-6 justify-center md:justify-start">
+                         <a href="https://www.facebook.com/profile.php?id=61561466572367" target="_blank" class="social-icon text-white social-icon-move transition duration-300" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-8 h-8"></i>
                         </a>
-                        <a href="https://instagram.com/brconnectionconsultoria" target="_blank" class="social-icon hover:text-accent transition duration-300" aria-label="Instagram">
-                             <i data-lucide="instagram" class="w-7 h-7"></i>
+                        <a href="https://instagram.com/brconnectionconsultoria" target="_blank" class="social-icon text-white social-icon-move transition duration-300" aria-label="Instagram">
+                             <i data-lucide="instagram" class="w-8 h-8"></i>
                         </a>
+                    </div>
+                    <div class="text-sm text-gray-400">
+                        <p class="mb-3">
+                            <strong class="text-accent">Disclaimer:</strong> We are not attorneys and cannot provide legal advice, draft legal documents, or explain their contents.
+                        </p>
+                         <p>© 2025 Eder Pereira Notary Public. All Rights Reserved.</p>
                     </div>
                 </div>
                 
-            </div>
-
-            <div class="flex flex-wrap justify-center space-x-4 text-sm text-gray-400 border-t border-white/20 pt-4 mt-8">
-                 <a href="#" class="hover:text-accent transition duration-200">Home</a>
-                <span class="text-gray-500">|</span>
-                <a href="#services" class="hover:text-accent transition duration-200">Services</a>
-                <span class="text-gray-500">|</span>
-                <a href="#reviews" class="hover:text-accent transition duration-200">Reviews</a>
-                <span class="text-gray-500">|</span>
-                <a href="#contact" class="hover:text-accent transition duration-200">Contact</a>
-                <span class="text-gray-500">|</span>
-                <a href="#faq" class="hover:text-accent transition duration-200">FAQ</a>
-            </div>
-            
-            <div class="text-center mt-4 mb-4">
-                 <p class="text-gray-400 text-sm">
-                    <span class="inline-block max-w-3xl">We are not lawyers, and don’t give legal advice. Always check with your own advisors.</span>
-                </p>
-            </div>
-
-            <div class="text-center text-gray-400 text-sm mb-3">
-                 <p>© 2025 Eder Pereira Notary Public. All Rights Reserved.</p>
             </div>
             
         </div>
@@ -861,23 +803,39 @@
     </script>
     
     <script>
-        // Function to toggle FAQ answer visibility
+        // Function to toggle FAQ answer visibility (Optimized Version)
         function toggleFAQ(element) {
             const answer = element.nextElementSibling
             const icon = element.querySelector('.faq-icon')
 
             // Close all other open answers
-            document.querySelectorAll('.faq-answer.open').forEach(openAnswer => {
+            document.querySelectorAll('.faq-answer-content.open').forEach(openAnswer => {
                 if (openAnswer !== answer) {
                     openAnswer.classList.remove('open')
-                    openAnswer.previousElementSibling.querySelector('.faq-icon').classList.remove('rotate')
+                    openAnswer.style.maxHeight = null;
+                    openAnswer.previousElementSibling.querySelector('.faq-icon').classList.remove('rotate-180')
                 }
             })
 
             // Open or close the current answer
             answer.classList.toggle('open')
-            icon.classList.toggle('rotate')
+            icon.classList.toggle('rotate-180')
+            
+            // Set max-height for smooth transition
+            if (answer.classList.contains('open')) {
+                answer.style.maxHeight = answer.scrollHeight + 40 + "px"; // Add buffer
+            } else {
+                answer.style.maxHeight = null;
+            }
         }
+        
+        // Initial setup for FAQ transition
+        document.addEventListener('DOMContentLoaded', () => {
+             document.querySelectorAll('.faq-answer-content').forEach(answer => {
+                answer.style.transition = 'max-height 0.4s ease-out, padding-bottom 0.4s ease-out';
+                answer.style.maxHeight = null; // Ensure initial state is closed
+             });
+        });
     </script>
 </body>
 </html>
