@@ -56,7 +56,8 @@
         /* HEADER/TITLES: Simple, clean separation */
         .section-header-box {
             display: inline-block; 
-            padding: 0.5rem 1.5rem;
+            /* Reduzido o padding para mobile para evitar vazamento */
+            padding: 0.5rem 1rem; /* p-3 no mobile */
             border-radius: 9999px; /* Pill shape */
             background-color: #ffffff;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -321,8 +322,8 @@
                                 <input type="tel" name="phone" placeholder="Your Phone Number (Required)" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary">
                             </div>
                              <div>
-                                <select name="service_type" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary font-bold">
-                                    <option value="" disabled selected>Select Now Your Specialized Notary Service</option>
+                                 <select name="service_type" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary font-bold">
+                                    <option value="" disabled selected>Select the Notary Service You Need Today</option>
                                     <option value="Apostille (URGENT)">Apostille (URGENT/International)</option>
                                     <option value="Loan Signing / Real Estate">Loan Signing / Real Estate Closing</option>
                                     <option value="Estate Planning">Estate Planning (Wills, POA, Trusts)</option>
@@ -385,10 +386,10 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <div class="text-center mb-16">
-                    <div class="section-header-box mx-auto bg-white text-primary p-4 sm:p-6 shadow-2xl">
+                    <div class="section-header-box mx-auto bg-white text-primary p-3 sm:p-6 shadow-2xl">
                         <span class="text-accent font-extrabold uppercase tracking-widest block text-sm sm:text-base lg:text-lg">OUR MOST REQUESTED SERVICES</span>
-                        <h2 class="text-3xl sm:text-5xl font-extrabold text-primary mt-2 headline-font leading-tight">Fast Solutions for Critical Documents</h2>
-                        <p class="text-base font-medium text-gray-600 mt-2">Specialized in Complex, High-Value Notarizations</p>
+                        <h2 class="text-2xl sm:text-5xl font-extrabold text-primary mt-2 headline-font leading-tight">Fast Solutions for Critical Documents</h2>
+                        <p class="text-sm sm:text-base font-medium text-gray-600 mt-2">Specialized in Complex, High-Value Notarizations</p>
                     </div>
                 </div>
                 
@@ -629,10 +630,11 @@
                         
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300">
-                            <input type="tel" name="phone" placeholder="Phone Number (WhatsApp Recommended)" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300">
+                            <input type="tel" name="phone" placeholder="Phone Number (Mobile for Call/Text)" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300">
                             <input type="email" name="email" placeholder="Email Address" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary transition duration-300">
+                            
                              <select name="service_type" required class="w-full p-4 border-2 border-gray-300 rounded-lg focus:border-accent focus:ring-accent text-primary font-bold">
-                                <option value="" disabled selected>Select Your Urgent Service</option>
+                                <option value="" disabled selected>Select the Notary Service You Need Today</option>
                                 <option value="Apostille (URGENT)">Apostille (URGENT/International)</option>
                                 <option value="Loan Signing / Real Estate">Loan Signing / Real Estate Closing</option>
                                 <option value="Estate Planning">Estate Planning (Wills, POA, Trusts)</option>
