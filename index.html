@@ -58,7 +58,6 @@
         /* HEADER/TITLES: Simple, clean separation */
         .section-header-box {
             display: inline-block; 
-            /* Reduzido o padding para mobile para evitar vazamento */
             padding: 0.5rem 1rem; /* p-3 no mobile */
             border-radius: 9999px; /* Pill shape */
             background-color: #ffffff;
@@ -119,13 +118,13 @@
             transition: all 0.3s ease-in-out;
             border-radius: 1rem;
             overflow: hidden;
-            border-top: 5px solid transparent; /* Changed from border-left */
+            border-top: 5px solid transparent; 
             padding-bottom: 2rem;
         }
         .service-card-value:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(10, 25, 49, 0.2); 
-            border-top-color: #FF652F; /* Changed from border-left */
+            border-top-color: #FF652F;
         }
         
         /* PRICE TAG */
@@ -164,7 +163,7 @@
             transition: all 0.2s;
         }
         .faq-question:hover {
-            color: #FF652F; /* Orange hover for question */
+            color: #FF652F; 
         }
         .faq-answer-content {
             max-height: 0;
@@ -173,7 +172,7 @@
             padding-bottom: 0;
         }
         .faq-answer-content.open {
-            max-height: 400px; /* Increased for longer answers */
+            max-height: 400px; 
             padding-bottom: 1rem;
         }
         .faq-icon.rotate-180 {
@@ -186,14 +185,14 @@
         }
         .social-icon-move:hover {
             transform: translateY(-5px) scale(1.1);
-            color: #e55c2a; /* Darker orange on hover */
+            color: #e55c2a;
         }
 
         .footer-contact-link {
             transition: all 0.3s ease-in-out;
         }
         .footer-contact-link:hover {
-            color: #FF652F !important; /* Forces accent color on hover for links */
+            color: #FF652F !important;
             transform: translateX(5px);
         }
 
@@ -203,8 +202,8 @@
             position: relative;
         }
         .footer-list-move:hover {
-            color: #FF652F; /* Cor accent/laranja no hover */
-            transform: translateX(5px); /* Deslocamento suave para a direita */
+            color: #FF652F; 
+            transform: translateX(5px);
         }
         .footer-list-move:hover i {
              color: #FF652F; 
@@ -765,7 +764,7 @@
                             </a>
                         </p>
                         <p>
-                            <a href="https://maps.app.goo.gl/34GPrDsk5B2jR6uW8" target="_blank" class="flex items-center justify-center md:justify-start footer-contact-link">
+                            <a href="https://www.google.com/maps/search/?api=1&query=250+Independence+Way+Danvers+MA+01923" target="_blank" class="flex items-center justify-center md:justify-start footer-contact-link">
                                  <i data-lucide="map-pin" class="w-5 h-5 mr-3 inline-block text-accent"></i>
                                  Office Location: 250 Independence Way, Danvers, MA
                             </a>
@@ -832,7 +831,7 @@
             
             // Set max-height for smooth transition
             if (answer.classList.contains('open')) {
-                answer.style.maxHeight = answer.scrollHeight + 40 + \"px\"; // Add buffer
+                answer.style.maxHeight = answer.scrollHeight + 40 + "px"; // Add buffer
             } else {
                 answer.style.maxHeight = null;
             }
