@@ -35,6 +35,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Flatpickr (CSS + JS + Suporte a Idiomas via jsdelivr oficial) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
     
     <script>
         tailwind.config = {
@@ -76,6 +82,27 @@
             0% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.5); }
             70% { box-shadow: 0 0 0 12px rgba(217, 119, 6, 0); }
             100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
+        }
+
+        /* Estilização temática do calendário Flatpickr */
+        .flatpickr-calendar {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+            border: 1px solid #E5E7EB !important;
+            border-radius: 0.75rem !important;
+            z-index: 99999 !important;
+        }
+        .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange {
+            background: #98672B !important;
+            border-color: #98672B !important;
+            color: #ffffff !important;
+        }
+        .flatpickr-day.today {
+            border-color: #254F43 !important;
+        }
+        .flatpickr-day:hover {
+            background: #E7D084 !important;
+            border-color: #E7D084 !important;
+            color: #021E15 !important;
         }
     </style>
 </head>
@@ -179,7 +206,7 @@
                     <h3 id="form-header" class="text-2xl font-serif font-bold text-brand-deep mb-2"></h3>
                     <p id="form-sub" class="text-xs text-gray-500 mb-6"></p>
 
-                    <form action="https://formspree.io/f/mlgaqrnk" method="POST" class="space-y-4">
+                    <form id="booking-form" class="space-y-4">
                         <div>
                             <label id="label-name" class="block text-[10px] font-black uppercase tracking-widest text-brand-deep mb-1"></label>
                             <input type="text" name="name" id="input-name" required class="w-full input-minimal text-sm">
@@ -198,7 +225,10 @@
                         </div>
                         <div>
                             <label id="label-date" class="block text-[10px] font-black uppercase tracking-widest text-brand-deep mb-1"></label>
-                            <input type="datetime-local" name="time" required class="w-full input-minimal text-sm">
+                            <div class="relative">
+                                <input type="text" id="appointment-date" name="time" required class="w-full input-minimal text-sm pr-10 cursor-pointer bg-white">
+                                <i data-lucide="calendar" id="calendar-icon" class="w-4 h-4 text-brand-gold-dark absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer"></i>
+                            </div>
                         </div>
 
                         <button id="book-btn" type="submit" class="w-full bg-brand-action hover:bg-brand-action-hover text-white font-black py-4 rounded-lg text-xs uppercase tracking-widest transition-all shadow-md mt-2"></button>
@@ -342,9 +372,12 @@
                     { value: "walk_in", text: "Walk-In (Inside Staples Danvers)" },
                     { value: "mobile", text: "Mobile Service (We come to you)" }
                 ],
-                labelDate: "Preferred Time", 
+                labelDate: "Preferred Date & Time", 
+                placeholderDate: "Click to choose date & time...",
                 bookBtn: "Request Appointment Now",
                 formSecureNote: "🔒 Your information is confidential and 100% secure.",
+                alertSuccess: "Appointment request sent successfully! We will confirm your slot shortly.",
+                alertError: "Error sending request. Please call us directly at (857) 995-3805.",
                 
                 processTitle: "Simple 3-Step Notarization Process",
                 step1Title: "Contact or Request Online", step1Desc: "Call us directly or fill out the quick form. We respond instantly to confirm your request.",
@@ -385,7 +418,7 @@
                 services: [
                     { title: "Apostille Service", desc: "Express verification and legalization for international documents.", icon: "award" },
                     { title: "RMV Services", desc: "Fast car titles, bill of sale, and vehicle registrations.", icon: "car" },
-                    { title: "Certified Translations", desc: "Legal-ready certified translations for immigration and official use.", icon: "languages" },
+                    { title: "Certified Translations", desc: "Certified translations in French, Portuguese, and Spanish for immigration and official use.", icon: "languages" },
                     { title: "Mobile Notary Travel", desc: "We come to your house, office, hospital, or local coffee shop.", icon: "map-pin" },
                     { title: "CORI Notarization", desc: "Background check authentications and identity verification.", icon: "fingerprint" },
                     { title: "Real Estate Signings", desc: "Closing documents, deeds, mortgages, and refinancing packages.", icon: "home" },
@@ -420,9 +453,12 @@
                     { value: "walk_in", text: "Atendimento Presencial (Na Staples Danvers)" },
                     { value: "mobile", text: "Serviço Móvel (Vamos até você)" }
                 ],
-                labelDate: "Horário Preferido", 
+                labelDate: "Data e Horário Preferidos", 
+                placeholderDate: "Clique para selecionar dia e hora...",
                 bookBtn: "Solicitar Agendamento Agora",
                 formSecureNote: "🔒 Suas informações são confidenciais e 100% seguras.",
+                alertSuccess: "Pedido de agendamento enviado com sucesso! Entraremos em contato em breve.",
+                alertError: "Erro ao enviar pedido. Ligue diretamente para (857) 995-3805.",
                 
                 processTitle: "Processo Simples em 3 Passos",
                 step1Title: "Contato ou Pedido Online", step1Desc: "Ligue diretamente ou preencha o formulário. Respondemos instantaneamente para confirmar.",
@@ -463,7 +499,7 @@
                 services: [
                     { title: "Serviço de Apostila", desc: "Autenticação e legalização expressa para documentos internacionais.", icon: "award" },
                     { title: "Serviços de RMV", desc: "Títulos de veículos, declarações de venda e registros rápidos.", icon: "car" },
-                    { title: "Traduções Certificadas", desc: "Traduções juramentadas para imigração e órgãos oficiais.", icon: "languages" },
+                    { title: "Traduções Certificadas", desc: "Traduções juramentadas em francês, português e espanhol para imigração e órgãos oficiais.", icon: "languages" },
                     { title: "Notário Móvel", desc: "Atendimento em sua residência, trabalho, hospital ou local de preferência.", icon: "map-pin" },
                     { title: "Notarização CORI", desc: "Autenticação de verificação de antecedentes penais.", icon: "fingerprint" },
                     { title: "Documentos Imobiliários", desc: "Escrituras, financiamentos e contratos de compra e venda.", icon: "home" },
@@ -498,16 +534,19 @@
                     { value: "walk_in", text: "Atención Presencial (En Staples Danvers)" },
                     { value: "mobile", text: "Servicio Móvil (Vamos a su ubicación)" }
                 ],
-                labelDate: "Horario Preferido", 
+                labelDate: "Fecha y Hora Preferida", 
+                placeholderDate: "Haga clic para elegir fecha y hora...",
                 bookBtn: "Solicitar Cita Ahora",
                 formSecureNote: "🔒 Su información es confidencial y 100% segura.",
+                alertSuccess: "¡Solicitud enviada con éxito! Nos comunicaremos con usted en breve.",
+                alertError: "Error al enviar la solicitud. Llámenos directamente al (857) 995-3805.",
                 
                 processTitle: "Proceso Rápido en 3 Pasos",
                 step1Title: "Contacto o Solicitud Online", step1Desc: "Llámenos directamente o llene el formulario. Respondemos al instante.",
                 step2Title: "Visita en Tienda o Notaría Móvil", step2Desc: "Visítenos en Staples Danvers sin esperas o reciba al notario en su puerta.",
                 step3Title: "Firmado, Sellado y Listo", step3Desc: "Sus documentos son revisados, verificados y estampados en menos de 10 minutos.",
 
-                servTitle: "Nuestros Servicios de Notaría",
+                servTitle: "Nuestros Serviços de Notaría",
                 servSub: "Desde declaraciones juradas simples hasta trámites inmobiliarios y apostillas internacionales.",
                 whyTitle: "¿Por Qué Elegir a Eder Pereira Notary?",
                 whyDesc: "No pierda horas esperando en filas de bancos o notaría tradicionales.",
@@ -520,7 +559,7 @@
                 ],
                 compGoodTitle: '<i data-lucide="check-circle" class="text-emerald-600"></i> Eder Pereira Notary',
                 compGoodList: [
-                    "✔ Servicio presencial en 10 min o móvil el mismo día",
+                    "✔ Servicio presencial en 10 min o móvil el mesmo día",
                     "✔ Aceptamos TODO tipo de documentos (RMV, Poderes, Apostillas)",
                     "✔ Horarios flexibles incluyendo noches y fines de semana",
                     "✔ 100% de precisión garantizada y cumplimiento estatal"
@@ -535,13 +574,13 @@
                 contactNote: "Atención presencial sin cita durante días laborables. Citas móviles programadas a solicitud.",
                 
                 footerDisclaimer: "Aviso Legal: No soy abogado en Massachusetts y tengo estrictamente prohibido brindar asesoría legal.",
-                footerCopy: "© 2026 Eder Pereira Notary Public. Todos los derechos reservados.",
+                footerCopy: "© 2026 Eder Pereira Notary Public. Todos os direitos reservados.",
                 openNow: "Abierto Ahora", closedNow: "Cerrado", floatCall: "Llamar (857) 995-3805",
                 
                 services: [
                     { title: "Servicio de Apostilla", desc: "Verificación y legalización exprés para uso internacional.", icon: "award" },
                     { title: "Servicios de RMV", desc: "Títulos de vehículos, traspasos y registros en el mismo día.", icon: "car" },
-                    { title: "Traducciones Certificadas", desc: "Traducciones legales certificadas para inmigración y trámites.", icon: "languages" },
+                    { title: "Traducciones Certificadas", desc: "Traducciones certificadas en francés, portugués y español para trámites oficiales e inmigración.", icon: "languages" },
                     { title: "Notario Móvil", desc: "Viajamos a su hogar, oficina, hospital o cafetería cercana.", icon: "map-pin" },
                     { title: "Notarización CORI", desc: "Autenticación de antecedentes penales y verificación de identidad.", icon: "fingerprint" },
                     { title: "Bienes Raíces", desc: "Especialista en firmas de hipotecas, escrituras y cierres.", icon: "home" },
@@ -552,7 +591,40 @@
             }
         };
 
+        // URL do Google Apps Script (Deixe a URL ou configure quando criar o Webhook)
+        const GOOGLE_CALENDAR_SCRIPT_URL = "SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI";
+
+        let currentLang = 'en';
+        let datePickerInstance = null;
+
+        function initCalendar(lang) {
+            if (datePickerInstance) {
+                datePickerInstance.destroy();
+            }
+
+            // Seleção de idioma segura e validada para o Flatpickr
+            let chosenLocale = 'default';
+            if (typeof flatpickr !== 'undefined' && flatpickr.l10ns) {
+                if (lang === 'pt' && flatpickr.l10ns.pt) chosenLocale = flatpickr.l10ns.pt;
+                if (lang === 'es' && flatpickr.l10ns.es) chosenLocale = flatpickr.l10ns.es;
+            }
+
+            datePickerInstance = flatpickr("#appointment-date", {
+                enableTime: true,
+                dateFormat: "Y-m-d H:i",
+                altInput: true,
+                altFormat: "F j, Y - h:i K",
+                altInputClass: "w-full input-minimal text-sm pr-10 cursor-pointer bg-white",
+                minDate: "today",
+                time_24hr: false,
+                minuteIncrement: 15,
+                locale: chosenLocale,
+                disableMobile: true
+            });
+        }
+
         function setLanguage(lang) {
+            currentLang = lang;
             const t = translations[lang];
             
             document.getElementById('top-bar-text').innerText = t.topBar;
@@ -649,6 +721,13 @@
 
             lucide.createIcons();
             updateStatus(lang);
+            initCalendar(lang);
+
+            // Atualiza o placeholder do campo visível criado pelo Flatpickr
+            const altInput = document.querySelector("#appointment-date + input, .flatpickr-input[type='text']");
+            if (altInput) {
+                altInput.placeholder = t.placeholderDate;
+            }
         }
 
         function updateStatus(lang) {
@@ -673,7 +752,68 @@
             }
         }
 
-        setLanguage('en');
+        // Abre o calendário ao clicar no ícone
+        document.getElementById('calendar-icon').addEventListener('click', function() {
+            if (datePickerInstance) {
+                datePickerInstance.open();
+            }
+        });
+
+        // Envio do formulário
+        document.getElementById('booking-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('book-btn');
+            const originalText = submitBtn.innerText;
+            const t = translations[currentLang];
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = "...";
+
+            const formData = {
+                name: document.getElementById('input-name').value,
+                phone: document.getElementById('input-phone').value,
+                service: document.getElementById('service-select').value,
+                location_type: document.getElementById('location-type-select').value,
+                time: document.getElementById('appointment-date').value
+            };
+
+            try {
+                // 1. Google Calendar Webhook (se configurado)
+                if (GOOGLE_CALENDAR_SCRIPT_URL !== "SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI") {
+                    await fetch(GOOGLE_CALENDAR_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formData)
+                    });
+                }
+
+                // 2. Notificação por e-mail via Formspree
+                await fetch("https://formspree.io/f/mlgaqrnk", {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                alert(t.alertSuccess);
+                this.reset();
+                if (datePickerInstance) {
+                    datePickerInstance.clear();
+                }
+            } catch (err) {
+                console.error("Submission error:", err);
+                alert(t.alertError);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalText;
+            }
+        });
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage('en');
+        });
     </script>
 </body>
 </html>
