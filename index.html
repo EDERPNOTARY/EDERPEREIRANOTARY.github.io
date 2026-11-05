@@ -226,10 +226,6 @@
                             <select id="service-select" name="service" required class="w-full input-minimal text-sm bg-white"></select>
                         </div>
                         <div>
-                            <label id="label-location-type" class="block text-[10px] font-black uppercase tracking-widest text-brand-deep mb-1"></label>
-                            <select id="location-type-select" name="location_type" required class="w-full input-minimal text-sm bg-white"></select>
-                        </div>
-                        <div>
                             <label id="label-date" class="block text-[10px] font-black uppercase tracking-widest text-brand-deep mb-1"></label>
                             <div class="relative">
                                 <input type="text" id="appointment-date" name="time" required class="w-full input-minimal text-sm pr-10 cursor-pointer bg-white">
@@ -382,13 +378,6 @@
                 labelName: "Full Name", placeholderName: "John Doe",
                 labelPhone: "Phone Number", placeholderPhone: "(555) 000-0000",
                 labelService: "Document Service Needed",
-                labelLocationType: "Service Type",
-                locationTypeOptions: [
-                    { value: "walk_in", text: "Walk-In ($30 - Inside Staples Danvers)" },
-                    { value: "mobile", text: "Mobile Notary ($150 - We come to you across MA)" },
-                    { value: "translation", text: "Certified Translation ($100 per document)" },
-                    { value: "real_estate", text: "Real Estate & Estate Planning ($15 / signature)" }
-                ],
                 labelDate: "Preferred Date & Time", 
                 placeholderDate: "Click to choose date & time...",
                 bookBtn: "Request Appointment Now",
@@ -433,10 +422,10 @@
                 openNow: "Open Now", closedNow: "Closed", floatCall: "Call (857) 995-3805",
                 
                 services: [
-                    { title: "Mobile Notary Travel ($150)", desc: "We travel directly to your home, office, hospital, or local cafe anywhere in MA.", icon: "map-pin" },
-                    { title: "Certified Translations ($100)", desc: "Certified translations in French, Portuguese, and Spanish for immigration and USCIS.", icon: "languages" },
-                    { title: "Walk-In Notary ($30)", desc: "Fast 10-minute walk-in document notarization inside Staples Danvers.", icon: "file-check" },
-                    { title: "Real Estate & Estate ($15/sig)", desc: "Mortgage closings, deeds, refinances, wills, trusts, and estate planning packages.", icon: "home" },
+                    { title: "Mobile Notary Travel", desc: "We travel directly to your home, office, hospital, or local cafe anywhere in MA.", icon: "map-pin" },
+                    { title: "Certified Translations", desc: "Certified translations in French, Portuguese, and Spanish for immigration and USCIS.", icon: "languages" },
+                    { title: "Walk-In Notary", desc: "Fast 10-minute walk-in document notarization inside Staples Danvers.", icon: "file-check" },
+                    { title: "Real Estate & Estate Planning", desc: "Mortgage closings, deeds, refinances, wills, trusts, and estate planning packages.", icon: "home" },
                     { title: "RMV Services", desc: "Fast vehicle title transfers, bills of sale, and registry affidavits.", icon: "car" },
                     { title: "Apostille Service", desc: "Express authentication and legalization for international official documents.", icon: "award" },
                     { title: "CORI Notarization", desc: "Background check authentications and state identity verification.", icon: "fingerprint" },
@@ -467,13 +456,6 @@
                 labelName: "Nome Completo", placeholderName: "João da Silva",
                 labelPhone: "Telefone", placeholderPhone: "(555) 000-0000",
                 labelService: "Serviço Necessário",
-                labelLocationType: "Tipo de Atendimento",
-                locationTypeOptions: [
-                    { value: "walk_in", text: "Atendimento Presencial ($30 - Na Staples Danvers)" },
-                    { value: "mobile", text: "Serviço Móvel ($150 - Vamos até você em MA)" },
-                    { value: "translation", text: "Tradução Certificada ($100 por documento)" },
-                    { value: "real_estate", text: "Documentos Imobiliários ($15 por assinatura)" }
-                ],
                 labelDate: "Data e Horário Preferidos", 
                 placeholderDate: "Clique para selecionar dia e hora...",
                 bookBtn: "Solicitar Agendamento Agora",
@@ -518,10 +500,10 @@
                 openNow: "Aberto Agora", closedNow: "Fechado", floatCall: "Ligar (857) 995-3805",
                 
                 services: [
-                    { title: "Notário Móvel ($150)", desc: "Vamos até a sua residência, escritório, hospital ou local de preferência em MA.", icon: "map-pin" },
-                    { title: "Traduções Certificadas ($100)", desc: "Traduções juramentadas em francês, português e espanhol para imigração e órgãos oficiais.", icon: "languages" },
-                    { title: "Atendimento Balcão ($30)", desc: "Notarização presencial rápida em 10 minutos dentro da Staples Danvers.", icon: "file-check" },
-                    { title: "Documentos Imobiliários ($15/ass.)", desc: "Escrituras, refinanciamentos, contratos de compra/venda, testamentos e trusts.", icon: "home" },
+                    { title: "Notário Móvel", desc: "Vamos até a sua residência, escritório, hospital ou local de preferência em MA.", icon: "map-pin" },
+                    { title: "Traduções Certificadas", desc: "Traduções juramentadas em francês, português e espanhol para imigração e órgãos oficiais.", icon: "languages" },
+                    { title: "Atendimento Balcão", desc: "Notarização presencial rápida em 10 minutos dentro da Staples Danvers.", icon: "file-check" },
+                    { title: "Documentos Imobiliários", desc: "Escrituras, refinanciamentos, contratos de compra/venda, testamentos e trusts.", icon: "home" },
                     { title: "Serviços de RMV", desc: "Títulos de veículos, declarações de venda e registros rápidos.", icon: "car" },
                     { title: "Serviço de Apostila", desc: "Autenticação e legalização expressa para documentos internacionais.", icon: "award" },
                     { title: "Notarização CORI", desc: "Autenticação de verificação de antecedentes penais.", icon: "fingerprint" },
@@ -534,7 +516,7 @@
                 topBarCall: "Llamar: (857) 995-3805",
                 navTagline: "Servicio de Notaría Móvil y Presencial",
                 navPhone: "Llamar Ahora",
-                linkWhy: "Por Qué Elegirnos", linkExpertise: "Servicios", linkProcess: "Cómo Funciona", linkLocationHead: "Ubicación",
+                linkWhy: "Por Qué Elegirnos", linkExpertise: "Services", linkProcess: "Cómo Funciona", linkLocationHead: "Ubicación",
                 googleReviews: "Calificación 5.0 (120+ Reseñas Verificadas)", 
                 heroTitle: 'Servicio de Notaría <span class="text-brand-gold-dark italic">Móvil y Presencial</span> Oficial', 
                 heroDesc: "Servicio móvil a domicilio en Boston y todo Massachusetts, además de atención presencial sin esperas dentro de Staples Danvers.",
@@ -552,13 +534,6 @@
                 labelName: "Nombre Completo", placeholderName: "Carlos Gómez",
                 labelPhone: "Teléfono", placeholderPhone: "(555) 000-0000",
                 labelService: "Servicio Requerido",
-                labelLocationType: "Tipo de Servicio",
-                locationTypeOptions: [
-                    { value: "walk_in", text: "Atención Presencial ($30 - En Staples Danvers)" },
-                    { value: "mobile", text: "Servicio Móvil ($150 - Vamos a su ubicación en MA)" },
-                    { value: "translation", text: "Traducción Certificada ($100 por documento)" },
-                    { value: "real_estate", text: "Bienes Raíces y Poderes ($15 por firma)" }
-                ],
                 labelDate: "Fecha y Hora Preferida", 
                 placeholderDate: "Haga clic para elegir fecha y hora...",
                 bookBtn: "Solicitar Cita Ahora",
@@ -603,12 +578,12 @@
                 openNow: "Abierto Ahora", closedNow: "Cerrado", floatCall: "Llamar (857) 995-3805",
                 
                 services: [
-                    { title: "Notaría Móvil ($150)", desc: "Viajamos a su hogar, oficina, hospital o cafetería cercana en cualquier parte de MA.", icon: "map-pin" },
-                    { title: "Traducciones Certificadas ($100)", desc: "Traducciones certificadas en francés, portugués y español para trámites oficiales e inmigración.", icon: "languages" },
-                    { title: "Atención Presencial ($30)", desc: "Notarización presencial rápida en 10 minutos dentro de Staples Danvers.", icon: "file-check" },
-                    { title: "Bienes Raíces ($15/firma)", desc: "Especialista en firmas de hipotecas, escrituras, poderes y cierres.", icon: "home" },
-                    { title: "Servicios de RMV", desc: "Títulos de vehículos, traspasos y registros en el mismo día.", icon: "car" },
-                    { title: "Servicio de Apostilla", desc: "Verificación y legalização exprés para uso internacional.", icon: "award" },
+                    { title: "Notaría Móvil", desc: "Viajamos a su hogar, oficina, hospital o cafetería cercana en cualquier parte de MA.", icon: "map-pin" },
+                    { title: "Traducciones Certificadas", desc: "Traducciones certificadas en francés, portugués y español para trámites oficiales e inmigración.", icon: "languages" },
+                    { title: "Atención Presencial", desc: "Notarización presencial rápida en 10 minutos dentro de Staples Danvers.", icon: "file-check" },
+                    { title: "Bienes Raíces", desc: "Especialista en firmas de hipotecas, escrituras, poderes y cierres.", icon: "home" },
+                    { title: "Servicios de RMV", desc: "Títulos de vehículos, traspasos y registros en el mesmo día.", icon: "car" },
+                    { title: "Servicio de Apostilla", desc: "Verificación y legalización exprés para uso internacional.", icon: "award" },
                     { title: "Notarización CORI", desc: "Autenticación de antecedentes penales y verificación de identidad.", icon: "fingerprint" },
                     { title: "Poderes Legales (POA)", desc: "Elaboración y autenticación rápida de poderes legales.", icon: "user-check" },
                     { title: "Notario General", desc: "Declaraciones juradas, juramentos y autenticación de firmas.", icon: "scroll" }
@@ -680,10 +655,6 @@
             document.getElementById('label-phone').innerText = t.labelPhone;
             document.getElementById('input-phone').placeholder = t.placeholderPhone;
             document.getElementById('label-service').innerText = t.labelService;
-            document.getElementById('label-location-type').innerText = t.labelLocationType;
-            
-            const locTypeSelect = document.getElementById('location-type-select');
-            locTypeSelect.innerHTML = t.locationTypeOptions.map(o => `<option value="${o.value}">${o.text}</option>`).join('');
 
             document.getElementById('label-date').innerText = t.labelDate;
             document.getElementById('book-btn').innerText = t.bookBtn;
@@ -791,7 +762,7 @@
 
                 gtag('event', 'conversion', {
                     'send_to': 'AW-17510551592/phone_click',
-                    'value': 150.0,
+                    'value': 1.0,
                     'currency': 'USD'
                 });
             }
@@ -822,7 +793,6 @@
                 name: document.getElementById('input-name').value,
                 phone: document.getElementById('input-phone').value,
                 service: document.getElementById('service-select').value,
-                location_type: document.getElementById('location-type-select').value,
                 time: document.getElementById('appointment-date').value
             };
 
@@ -846,14 +816,13 @@
                     gtag('event', 'generate_lead', {
                         event_category: 'Engagement',
                         service_type: formData.service,
-                        location_type: formData.location_type,
-                        value: 150.0,
+                        value: 1.0,
                         currency: 'USD'
                     });
 
                     gtag('event', 'conversion', {
                         'send_to': 'AW-17510551592/lead_form',
-                        'value': 150.0,
+                        'value': 1.0,
                         'currency': 'USD'
                     });
                 }
