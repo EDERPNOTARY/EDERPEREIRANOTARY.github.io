@@ -31,8 +31,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Eder Pereira Notary Public | Mobile Across MA & Walk-Ins at Staples Danvers</title>
-    <meta name="description" content="Official Mobile Notary across Greater Boston & Massachusetts, and Walk-In Notary inside Staples Danvers. Certified Translations for all purposes, RMV, Apostille, Estate Planning & Real Estate Closings.">
+    <title>Eder Pereira Notary Public | 24/7 Mobile Across MA & Walk-Ins at Staples Danvers</title>
+    <meta name="description" content="Official 24/7 Mobile Notary across Greater Boston & Massachusetts, and Walk-In Notary inside Staples Danvers. Certified Translations for all purposes, Consular Forms, RMV, Apostille & Estate Planning.">
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -326,6 +326,7 @@
                 <div class="pt-4 border-t border-white/10 space-y-1">
                     <p id="contact-hours" class="text-xs uppercase tracking-widest text-brand-gold-light font-black"></p>
                     <p id="contact-weekend" class="text-xs uppercase tracking-widest text-brand-gold-light/80 font-black"></p>
+                    <p id="contact-mobile-24" class="text-xs uppercase tracking-widest text-brand-gold-light font-black"></p>
                     <p id="contact-note" class="text-[10px] text-gray-400 mt-2"></p>
                 </div>
             </div>
@@ -356,25 +357,25 @@
     <script>
         const translations = {
             en: {
-                topBar: "Mobile Notary Available Across Greater Boston & MA | Walk-Ins at Staples Danvers",
-                topBarCall: "Call: (857) 995-3805",
-                navTagline: "Mobile & Walk-In Notary Services",
-                navPhone: "Call Now", 
+                topBar: "24/7 Mobile Notary Across MA | Walk-Ins at Staples Danvers",
+                topBarCall: "Call 24/7: (857) 995-3805",
+                navTagline: "24/7 Mobile & Walk-In Notary",
+                navPhone: "Call (857) 995-3805", 
                 linkWhy: "Why Choose Us", linkExpertise: "Services", linkProcess: "How It Works", linkLocationHead: "Location",
                 googleReviews: "5.0 Rating (120+ Verified Reviews)", 
-                heroTitle: 'Official Mobile & Walk-In <span class="text-brand-gold-dark italic">Notary Services</span>', 
-                heroDesc: "On-demand Mobile Notary traveling anywhere in Greater Boston & Massachusetts, plus immediate Walk-In appointments inside Staples Danvers. Fast, legal, and hassle-free.",
-                benefit1: "Mobile Service to your Doorstep or 10-Minute Walk-Ins at Staples",
-                benefit2: "Certified Translations, RMV, Apostilles, POA & Estate Closings",
+                heroTitle: 'Official 24/7 Mobile & Walk-In <span class="text-brand-gold-dark italic">Notary Services</span>', 
+                heroDesc: "24/7 On-Demand Mobile Notary traveling anywhere in Greater Boston & Massachusetts, plus immediate Walk-In appointments inside Staples Danvers. Certified translations, consular forms & legal documents.",
+                benefit1: "24/7 Mobile Service to your Doorstep or 10-Minute Walk-Ins at Staples",
+                benefit2: "Certified Translations, Brazilian Passport, RMV, Apostilles, POA & Divorce",
                 benefit3: "Commissioned, Bonded & Insured Notary Public in Massachusetts",
                 btnCallHero: "Call (857) 995-3805", 
                 btnWaHero: "WhatsApp Quote",
                 btnBookHero: "Schedule Online",
-                trustBadges: ["✔ 1,000+ Documents Notarized", "✔ Mobile Travel Across MA", "✔ Walk-In at Staples Danvers"],
+                trustBadges: ["✔ 1,000+ Documents Notarized", "✔ 24/7 Mobile Travel Across MA", "✔ Walk-In at Staples Danvers"],
                 
                 formBadge: "Instant Quote & Booking",
                 formHeader: "Need a Notary Fast?",
-                formSub: "Fill out the form below and we will confirm your slot within 5 minutes.",
+                formSub: "Fill out the form below and we will confirm your appointment within 5 minutes.",
                 labelName: "Full Name", placeholderName: "John Doe",
                 labelPhone: "Phone Number", placeholderPhone: "(555) 000-0000",
                 labelService: "Document Service Needed",
@@ -386,69 +387,70 @@
                 alertError: "Error sending request. Please call us directly at (857) 995-3805.",
                 
                 processTitle: "Simple 3-Step Notarization Process",
-                step1Title: "Contact or Request Online", step1Desc: "Call, send a WhatsApp message, or book online. We respond instantly.",
-                step2Title: "Walk-In or Mobile Travel", step2Desc: "Visit Staples Danvers with zero waiting time, or let our mobile notary travel to your address in MA.",
+                step1Title: "Contact or Request Online", step1Desc: "Call 24/7, send a WhatsApp message, or book online. We respond instantly.",
+                step2Title: "Walk-In or Mobile Travel", step2Desc: "Visit Staples Danvers with zero waiting time, or let our 24/7 mobile notary travel to your address in MA.",
                 step3Title: "Signed, Sealed & Done", step3Desc: "Your documents are checked, verified, and officially stamped in under 10 minutes.",
 
-                servTitle: "Comprehensive Notary Services",
-                servSub: "From single-page affidavits to complex loan signings, translations, and international apostilles.",
+                servTitle: "Comprehensive Notary & Translation Services",
+                servSub: "From Brazilian consular forms and family documents to certified translations and mobile closings.",
                 whyTitle: "Why Choose Eder Pereira Notary?",
                 whyDesc: "Don't waste hours sitting in bank lobbies or searching for unavailable public notaries.",
                 compBadTitle: '<i data-lucide="x-circle" class="text-red-500"></i> Banks & Traditional Notaries',
                 compBadList: [
                     "❌ Long lines and mandatory appointment delays",
-                    "❌ Refuse complex legal, real estate, or RMV forms",
-                    "❌ No mobile service — you must travel to them",
+                    "❌ Refuse consular, translation, divorce, or RMV forms",
+                    "❌ No mobile or 24/7 service — you must travel to them",
                     "❌ Strict, inconvenient operating hours"
                 ],
                 compGoodTitle: '<i data-lucide="check-circle" class="text-emerald-600"></i> Eder Pereira Notary',
                 compGoodList: [
-                    "✔ 10-Minute Walk-Ins at Staples or Statewide Mobile Travel",
-                    "✔ We handle ALL document types (RMV, POA, Apostille, Translations)",
-                    "✔ Flexible hours including evenings and weekends",
+                    "✔ 10-Minute Walk-Ins at Staples or 24/7 Statewide Mobile Travel",
+                    "✔ We handle ALL document types (Consular, RMV, POA, Apostille, Translations)",
+                    "✔ Available nights, weekends, and emergency hours",
                     "✔ 100% Guaranteed accuracy and state compliance"
                 ],
 
-                locTitle: "Danvers Office & Statewide Mobile", locSubtitle: "Inside Staples - Danvers, MA",
-                locDesc: "Visit us at Staples Danvers (Liberty Tree area) for walk-ins, or request a mobile notary visit directly to your home, office, or hospital across Greater Boston and MA.",
-                locFeatures: ["Liberty Tree Danvers", "Statewide Mobile Service", "Secure Environment", "Ample Free Parking"],
+                locTitle: "Danvers Office & 24/7 Statewide Mobile", locSubtitle: "Inside Staples - Danvers, MA",
+                locDesc: "Visit us at Staples Danvers for fast walk-ins during store hours, or request our 24/7 mobile notary visit directly to your home, office, hospital, or airport across Greater Boston and MA.",
+                locFeatures: ["Staples Danvers Walk-In", "24/7 Statewide Mobile Service", "Secure Environment", "Ample Free Parking"],
                 navBtn: "Get Directions", contactTitle: "Direct Contact", 
-                contactHours: "Mon-Fri: 8:30 AM - 7:00 PM",
-                contactWeekend: "Saturday & Sunday: Appointment ONLY",
-                contactNote: "Walk-ins welcome during weekday hours. Mobile appointments scheduled upon request.",
+                contactHours: "Staples Danvers: Mon-Fri 8:30 AM - 7:00 PM",
+                contactWeekend: "Saturday & Sunday: By Appointment",
+                contactMobile24: "Mobile Notary: Available 24/7 On-Demand Across MA",
+                contactNote: "Walk-ins welcome at Staples during weekday store hours. Mobile service available 24/7 upon request.",
                 
                 footerDisclaimer: "Legal Notice: I am not an attorney licensed to practice law in the Commonwealth of Massachusetts and I am strictly prohibited from providing legal advice.",
                 footerCopy: "© 2026 Eder Pereira Notary Public. All Rights Reserved.",
-                openNow: "Open Now", closedNow: "Closed", floatCall: "Call (857) 995-3805",
+                openNow: "Open Now", closedNow: "Closed (Mobile 24/7)", floatCall: "Call 24/7 (857) 995-3805",
                 
                 services: [
-                    { title: "Mobile Notary Travel", desc: "We travel directly to your home, office, hospital, or local cafe anywhere in MA.", icon: "map-pin" },
-                    { title: "Certified Translations", desc: "Certified translations in French, Portuguese, and Spanish for legal, academic, business, and official use.", icon: "languages" },
+                    { title: "24/7 Mobile Notary Travel", desc: "We travel directly to your home, office, hospital, or local spot anywhere in MA at any time.", icon: "map-pin" },
+                    { title: "Brazilian Passport & Consular Forms", desc: "Passport applications, minor travel authorizations, consular powers of attorney & affidavits.", icon: "globe" },
+                    { title: "Family & Court Documents", desc: "Prenuptial agreements, divorce forms, minor travel consent & custody affidavits.", icon: "file-text" },
+                    { title: "Certified Translations", desc: "Certified translations in Portuguese, Spanish, French, and English for official, academic & legal use.", icon: "languages" },
                     { title: "Walk-In Notary", desc: "Fast 10-minute walk-in document notarization inside Staples Danvers.", icon: "file-check" },
                     { title: "Real Estate & Estate Planning", desc: "Mortgage closings, deeds, refinances, wills, trusts, and estate planning packages.", icon: "home" },
                     { title: "RMV Services", desc: "Fast vehicle title transfers, bills of sale, and registry affidavits.", icon: "car" },
-                    { title: "Apostille Service", desc: "Express authentication and legalization for international official documents.", icon: "award" },
-                    { title: "CORI Notarization", desc: "Background check authentications and state identity verification.", icon: "fingerprint" },
-                    { title: "Power of Attorney (POA)", desc: "Legally binding financial and medical POAs completed quickly.", icon: "user-check" },
-                    { title: "General Notary", desc: "Affidavits, sworn statements, jurats, oaths, and certified true copies.", icon: "scroll" }
+                    { title: "Apostille Express", desc: "Authentication and legalization for international documents.", icon: "award" },
+                    { title: "Power of Attorney (POA)", desc: "Financial and healthcare powers of attorney completed quickly and accurately.", icon: "user-check" }
                 ]
             },
             pt: {
-                topBar: "Notário Móvel em Boston e Massachusetts | Presencial na Staples Danvers",
-                topBarCall: "Ligar: (857) 995-3805",
-                navTagline: "Serviços de Notário Móvel e Presencial",
-                navPhone: "Ligue Agora",
+                topBar: "Notário Móvel 24/7 em Todo MA | Presencial na Staples Danvers",
+                topBarCall: "Ligue 24/7: (857) 995-3805",
+                navTagline: "Notário Móvel 24/7 e Presencial",
+                navPhone: "Ligue (857) 995-3805",
                 linkWhy: "Por Que Nós", linkExpertise: "Serviços", linkProcess: "Como Funciona", linkLocationHead: "Localização",
                 googleReviews: "Nota 5.0 (120+ Avaliações Verificadas)", 
-                heroTitle: 'Serviço de Notário <span class="text-brand-gold-dark italic">Móvel e Presencial</span> Oficial', 
-                heroDesc: "Atendimento Móvel onde você estiver na Grande Boston e em todo o estado de Massachusetts, além de atendimento presencial sem espera na Staples Danvers.",
-                benefit1: "Notário Móvel no Mesmo Dia em Todo MA ou Presencial em 10 Minutos",
-                benefit2: "Traduções Certificadas, RMV, Apostila, Imóveis e Procurações",
+                heroTitle: 'Serviço de Notário <span class="text-brand-gold-dark italic">Móvel 24/7 e Presencial</span> Oficial', 
+                heroDesc: "Atendimento Móvel 24 horas onde você estiver na Grande Boston e em Massachusetts, além de atendimento presencial sem espera na Staples Danvers. Traduções certificadas, formulários consulares e documentos jurídicos.",
+                benefit1: "Atendimento Móvel 24/7 ao Domicílio ou em 10 Minutos na Staples",
+                benefit2: "Passaporte Brasileiro, Traduções Certificadas, RMV, Apostila, Divórcio e Prenup",
                 benefit3: "Oficial Comissionado, Licenciado e Segurado em Massachusetts",
                 btnCallHero: "Ligar (857) 995-3805", 
                 btnWaHero: "Cotação WhatsApp",
                 btnBookHero: "Agendar Online",
-                trustBadges: ["✔ +1.000 Documentos Notarizados", "✔ Atendimento Móvel em Todo MA", "✔ Dentro da Staples Danvers"],
+                trustBadges: ["✔ +1.000 Documentos Notarizados", "✔ Móvel 24/7 em Todo MA", "✔ Balcão na Staples Danvers"],
                 
                 formBadge: "Cotação e Agendamento Instantâneo",
                 formHeader: "Precisa de Notário Rápido?",
@@ -464,69 +466,70 @@
                 alertError: "Erro ao enviar pedido. Ligue diretamente para (857) 995-3805.",
                 
                 processTitle: "Processo Simples em 3 Passos",
-                step1Title: "Contato ou Pedido Online", step1Desc: "Ligue, mande mensagem no WhatsApp ou agende online. Respondemos na hora.",
-                step2Title: "Na Loja ou Atendimento Móvel", step2Desc: "Venha até a Staples Danvers sem filas ou receba o notário móvel na sua casa ou trabalho.",
+                step1Title: "Contato ou Pedido Online", step1Desc: "Ligue 24/7, mande mensagem no WhatsApp ou agende online. Respondemos na hora.",
+                step2Title: "Na Loja ou Atendimento Móvel", step2Desc: "Venha até a Staples Danvers sem filas ou receba o notário móvel 24/7 na sua casa, trabalho ou hospital.",
                 step3Title: "Assinado e Concluído", step3Desc: "Seus documentos são analisados, carimbados e oficializados em menos de 10 minutos.",
 
-                servTitle: "Nossos Serviços Expressos",
-                servSub: "De declarações simples e certidões a traduções juramentadas e processos imobiliários.",
+                servTitle: "Serviços Notariais e Traduções Oficiais",
+                servSub: "De documentos consulares brasileiros a acordos familiares, traduções e escrituras.",
                 whyTitle: "Por Que Escolher Eder Pereira Notary?",
                 whyDesc: "Não perca horas em filas de bancos ou cartórios tradicionais.",
                 compBadTitle: '<i data-lucide="x-circle" class="text-red-500"></i> Bancos e Cartórios Tradicionais',
                 compBadList: [
                     "❌ Longas filas e atrasos obrigatórios de agendamento",
-                    "❌ Recusam formulários complexos, imobiliários ou de RMV",
-                    "❌ Sem serviço móvel — você precisa ir até eles",
+                    "❌ Recusam passaportes, divórcio, RMV ou documentos em outros idiomas",
+                    "❌ Sem serviço móvel ou 24 horas — você precisa ir até eles",
                     "❌ Horários de funcionamento rígidos e inconvenientes"
                 ],
                 compGoodTitle: '<i data-lucide="check-circle" class="text-emerald-600"></i> Eder Pereira Notary',
                 compGoodList: [
-                    "✔ Atendimento presencial em 10 min ou móvel em qualquer cidade de MA",
-                    "✔ Aceitamos TODOS os tipos de documentos (RMV, Procuração, Apostila)",
-                    "✔ Horários flexíveis incluindo noites e fins de semana",
+                    "✔ Atendimento presencial na Staples ou Móvel 24/7 em qualquer cidade de MA",
+                    "✔ Aceitamos TODOS os tipos de documentos (Consular, RMV, Procuração, Apostila)",
+                    "✔ Disponível noites, madrugadas e fins de semana",
                     "✔ 100% de precisão garantida e conformidade legal estadual"
                 ],
 
-                locTitle: "Escritório em Danvers e Atendimento Móvel", locSubtitle: "Dentro da Staples - Danvers, MA",
-                locDesc: "Atendimento presencial na Staples Danvers ou atendimento móvel com deslocamento até o seu endereço em toda a região metropolitana de Boston e Massachusetts.",
-                locFeatures: ["Staples Danvers", "Atendimento Móvel em Todo MA", "Ambiente Seguro", "Estacionamento Amplo"],
+                locTitle: "Escritório em Danvers e Atendimento Móvel 24/7", locSubtitle: "Dentro da Staples - Danvers, MA",
+                locDesc: "Atendimento presencial na Staples Danvers durante o horário comercial ou serviço móvel 24 horas por dia em toda a Grande Boston e Massachusetts.",
+                locFeatures: ["Staples Danvers Presencial", "Móvel 24/7 em Todo MA", "Ambiente Seguro", "Estacionamento Amplo"],
                 navBtn: "Obter Direções", contactTitle: "Contato Direto", 
-                contactHours: "Seg-Sex: 8:30 - 19:00",
-                contactWeekend: "Sábado e Domingo: APENAS COM AGENDAMENTO",
-                contactNote: "Atendimento presencial sem agendamento nos dias úteis. Agendamentos móveis mediante solicitação.",
+                contactHours: "Staples Danvers: Seg-Sex 8:30 - 19:00",
+                contactWeekend: "Sábado e Domingo: Com Agendamento",
+                contactMobile24: "Notário Móvel: Disponível 24/7 em Qualquer Cidade de MA",
+                contactNote: "Presencial na Staples em dias úteis. Atendimento móvel disponível 24 horas sob solicitação.",
                 
                 footerDisclaimer: "Aviso Legal: Não sou advogado em Massachusetts e sou estritamente proibido de prestar consultoria jurídica.",
                 footerCopy: "© 2026 Eder Pereira Notary Public. Todos os direitos reservados.",
-                openNow: "Aberto Agora", closedNow: "Fechado", floatCall: "Ligar (857) 995-3805",
+                openNow: "Aberto Agora", closedNow: "Fechado (Móvel 24/7 Ativo)", floatCall: "Ligar 24/7 (857) 995-3805",
                 
                 services: [
-                    { title: "Notário Móvel", desc: "Vamos até a sua residência, escritório, hospital ou local de preferência em MA.", icon: "map-pin" },
-                    { title: "Traduções Certificadas", desc: "Traduções juramentadas/certificadas em francês, português e espanhol para fins legais, acadêmicos, corporativos e oficiais.", icon: "languages" },
-                    { title: "Atendimento Balcão", desc: "Notarização presencial rápida em 10 minutos dentro da Staples Danvers.", icon: "file-check" },
-                    { title: "Documentos Imobiliários", desc: "Escrituras, refinanciamentos, contratos de compra/venda, testamentos e trusts.", icon: "home" },
+                    { title: "Notário Móvel 24/7", desc: "Vamos até a sua residência, escritório, hospital ou local de preferência em MA a qualquer hora.", icon: "map-pin" },
+                    { title: "Passaporte Brasileiro e Formulários Consulares", desc: "Reconhecimento de firma para passaporte, autorização de viagem de menor e procurações consulares.", icon: "globe" },
+                    { title: "Documentos de Família e Divórcio", desc: "Acordo pré-nupcial (prenup), papéis de divórcio, declarações de custódia e tribunal.", icon: "file-text" },
+                    { title: "Traduções Certificadas", desc: "Traduções em português, espanhol, francês e inglês para fins oficiais, acadêmicos e legais.", icon: "languages" },
+                    { title: "Atendimento Balcão Staples", desc: "Notarização presencial rápida em 10 minutos dentro da Staples Danvers.", icon: "file-check" },
+                    { title: "Documentos Imobiliários e Sucessão", desc: "Escrituras, refinanciamentos, contratos de compra e venda, testamentos e trusts.", icon: "home" },
                     { title: "Serviços de RMV", desc: "Títulos de veículos, declarações de venda e registros rápidos.", icon: "car" },
-                    { title: "Serviço de Apostila", desc: "Autenticação e legalização expressa para documentos internacionais.", icon: "award" },
-                    { title: "Notarização CORI", desc: "Autenticação de verificação de antecedentes penais.", icon: "fingerprint" },
-                    { title: "Procurações (POA)", desc: "Procurações legais elaboradas e notarizadas rapidamente.", icon: "user-check" },
-                    { title: "Notário Geral", desc: "Declarações juramentadas, aterrissagens, juramentos e contratos.", icon: "scroll" }
+                    { title: "Serviço de Apostila Express", desc: "Autenticação e legalização para documentos internacionais.", icon: "award" },
+                    { title: "Procurações (POA)", desc: "Procurações gerais e médicas elaboradas e autenticadas com rapidez.", icon: "user-check" }
                 ]
             },
             es: {
-                topBar: "Notaría Móvil en Boston y Todo MA | Presencial en Staples Danvers",
-                topBarCall: "Llamar: (857) 995-3805",
-                navTagline: "Servicio de Notaría Móvil y Presencial",
-                navPhone: "Llamar Ahora",
+                topBar: "Notaría Móvil 24/7 en Boston y Todo MA | Presencial en Staples Danvers",
+                topBarCall: "Llamar 24/7: (857) 995-3805",
+                navTagline: "Notaría Móvil 24/7 y Presencial",
+                navPhone: "Llamar (857) 995-3805",
                 linkWhy: "Por Qué Elegirnos", linkExpertise: "Servicios", linkProcess: "Cómo Funciona", linkLocationHead: "Ubicación",
                 googleReviews: "Calificación 5.0 (120+ Reseñas Verificadas)", 
-                heroTitle: 'Servicio de Notaría <span class="text-brand-gold-dark italic">Móvil y Presencial</span> Oficial', 
-                heroDesc: "Servicio móvil a domicilio en Boston y todo Massachusetts, además de atención presencial sin esperas dentro de Staples Danvers.",
-                benefit1: "Notaría Móvil a Domicilio en Todo MA o en 10 Minutos en Staples",
-                benefit2: "Traducciones Certificadas, RMV, Apostilla, Bienes Raíces y Poderes",
+                heroTitle: 'Servicio de Notaría <span class="text-brand-gold-dark italic">Móvil 24/7 y Presencial</span> Oficial', 
+                heroDesc: "Servicio móvil las 24 horas en Boston y todo Massachusetts, además de atención presencial rápida dentro de Staples Danvers. Traducciones certificadas, poderes y documentos legales.",
+                benefit1: "Servicio Móvil 24/7 a Domicilio o en 10 Minutos en Staples",
+                benefit2: "Traducciones Certificadas, Trámites Consulares, RMV, Apostilla y Divorcios",
                 benefit3: "Totalmente Licenciado, Comisionado y Asegurado en Massachusetts",
                 btnCallHero: "Llamar (857) 995-3805", 
                 btnWaHero: "Cotización WhatsApp",
                 btnBookHero: "Reservar Online",
-                trustBadges: ["✔ +1,000 Documentos Notarizados", "✔ Servicio Móvil en Todo MA", "✔ Dentro de Staples Danvers"],
+                trustBadges: ["✔ +1,000 Documentos Notarizados", "✔ Móvil 24/7 en Todo MA", "✔ En Staples Danvers"],
                 
                 formBadge: "Cotización y Reserva Instantánea",
                 formHeader: "¿Necesita Notario Rápido?",
@@ -542,56 +545,55 @@
                 alertError: "Error al enviar la solicitud. Llámenos directamente al (857) 995-3805.",
                 
                 processTitle: "Proceso Rápido en 3 Pasos",
-                step1Title: "Contacto o Solicitud Online", step1Desc: "Llame, envíe WhatsApp o reserve en línea. Respondemos al instante.",
-                step2Title: "En Tienda o Notaría Móvil", step2Desc: "Visítenos en Staples Danvers sin filas o reciba al notario en su puerta en Massachusetts.",
+                step1Title: "Contacto o Solicitud Online", step1Desc: "Llame 24/7, envíe WhatsApp o reserve en línea. Respondemos al instante.",
+                step2Title: "En Tienda o Notaría Móvil", step2Desc: "Visítenos en Staples Danvers sin filas o reciba al notario 24/7 en su puerta en Massachusetts.",
                 step3Title: "Firmado, Sellado y Listo", step3Desc: "Sus documentos son revisados, verificados y sellados en menos de 10 minutos.",
 
-                servTitle: "Nuestros Servicios de Notaría",
-                servSub: "Desde declaraciones juradas hasta trámites de bienes raíces, traducciones y apostillas.",
+                servTitle: "Servicios Notariales y Traducciones",
+                servSub: "Desde trámites consulares y acuerdos familiares hasta bienes raíces y apostillas.",
                 whyTitle: "¿Por Qué Elegir a Eder Pereira Notary?",
                 whyDesc: "No pierda horas esperando en filas de bancos o notarías tradicionales.",
                 compBadTitle: '<i data-lucide="x-circle" class="text-red-500"></i> Bancos y Notarías Tradicionales',
                 compBadList: [
                     "❌ Largas filas y demoras obligatorias de citas",
-                    "❌ Rechazan formularios complejos, inmobiliarios o de RMV",
-                    "❌ Sin servicio móvil — usted debe viajar hacia ellos",
+                    "❌ Rechazan formularios consulares, divorcios, RMV o traducciones",
+                    "❌ Sin servicio a domicilio ni 24 horas — usted debe viajar",
                     "❌ Horarios de atención estrictos e incómodos"
                 ],
                 compGoodTitle: '<i data-lucide="check-circle" class="text-emerald-600"></i> Eder Pereira Notary',
                 compGoodList: [
-                    "✔ Servicio presencial en 10 min o móvil en cualquier parte de MA",
-                    "✔ Aceptamos TODO tipo de documentos (RMV, Poderes, Apostillas, Traducciones)",
-                    "✔ Horarios flexibles incluyendo noches y fines de semana",
+                    "✔ Servicio presencial en 10 min o móvil 24/7 en cualquier parte de MA",
+                    "✔ Aceptamos TODO tipo de documentos (Consulares, RMV, Poderes, Apostillas)",
+                    "✔ Disponibilidad nocturna, fines de semana y emergencias",
                     "✔ 100% de precisión garantizada y cumplimiento estatal"
                 ],
 
-                locTitle: "Oficina en Danvers y Servicio Móvil", locSubtitle: "Dentro de Staples - Danvers, MA",
-                locDesc: "Visítenos en Staples Danvers para atención inmediata, o solicite el servicio móvil directamente en su hogar o trabajo en Boston y todo Massachusetts.",
-                locFeatures: ["Staples Danvers", "Servicio Móvil en Todo MA", "Ambiente Seguro", "Estacionamiento Amplio"],
-                navBtn: "Obter Direcciones", contactTitle: "Contacto Directo", 
-                contactHours: "Lun-Vie: 8:30 AM - 7:00 PM",
-                contactWeekend: "Sábado y Domingo: SOLO CON CITA",
-                contactNote: "Atención presencial sin cita durante días laborables. Citas móviles programadas a solicitud.",
+                locTitle: "Oficina en Danvers y Servicio Móvil 24/7", locSubtitle: "Dentro de Staples - Danvers, MA",
+                locDesc: "Visítenos en Staples Danvers para atención inmediata o solicite el servicio móvil 24 horas en su hogar, oficina u hospital en Boston y todo Massachusetts.",
+                locFeatures: ["Staples Danvers Presencial", "Servicio Móvil 24/7 en Todo MA", "Ambiente Seguro", "Estacionamiento Amplio"],
+                navBtn: "Obtener Direcciones", contactTitle: "Contacto Directo", 
+                contactHours: "Staples Danvers: Lun-Vie 8:30 AM - 7:00 PM",
+                contactWeekend: "Sábado y Domingo: Solo con Cita",
+                contactMobile24: "Notaría Móvil: Disponible 24/7 a Domicilio en Todo MA",
+                contactNote: "Atención presencial en días laborables. Citas móviles disponibles las 24 horas previa solicitud.",
                 
                 footerDisclaimer: "Aviso Legal: No soy abogado en Massachusetts y tengo estrictamente prohibido brindar asesoría legal.",
                 footerCopy: "© 2026 Eder Pereira Notary Public. Todos los derechos reservados.",
-                openNow: "Abierto Ahora", closedNow: "Cerrado", floatCall: "Llamar (857) 995-3805",
+                openNow: "Abierto Ahora", closedNow: "Cerrado (Móvil 24/7 Activo)", floatCall: "Llamar 24/7 (857) 995-3805",
                 
                 services: [
-                    { title: "Notaría Móvil", desc: "Viajamos a su hogar, oficina, hospital o cafetería cercana en cualquier parte de MA.", icon: "map-pin" },
-                    { title: "Traducciones Certificadas", desc: "Traducciones certificadas en francés, portugués y español para trámites legales, académicos, corporativos y oficiales.", icon: "languages" },
-                    { title: "Atención Presencial", desc: "Notarización presencial rápida en 10 minutos dentro de Staples Danvers.", icon: "file-check" },
-                    { title: "Bienes Raíces", desc: "Especialista en firmas de hipotecas, escrituras, poderes y cierres.", icon: "home" },
-                    { title: "Servicios de RMV", desc: "Títulos de vehículos, traspasos y registros en el mesmo día.", icon: "car" },
-                    { title: "Servicio de Apostilla", desc: "Verificación y legalización exprés para uso internacional.", icon: "award" },
-                    { title: "Notarización CORI", desc: "Autenticación de antecedentes penales y verificación de identidad.", icon: "fingerprint" },
-                    { title: "Poderes Legales (POA)", desc: "Elaboración y autenticación rápida de poderes legales.", icon: "user-check" },
-                    { title: "Notario General", desc: "Declaraciones juradas, juramentos y autenticación de firmas.", icon: "scroll" }
+                    { title: "Notaría Móvil 24/7", desc: "Viajamos a su hogar, oficina, hospital o cafetería cercana en cualquier parte de MA a cualquier hora.", icon: "map-pin" },
+                    { title: "Pasaportes y Formularios Consulares", desc: "Autenticación para pasaportes, autorización de viaje de menores y poderes consulares.", icon: "globe" },
+                    { title: "Documentos de Familia y Divorcio", desc: "Acuerdos prenupciales, documentos de divorcio, consentimiento de viaje y declaraciones.", icon: "file-text" },
+                    { title: "Traducciones Certificadas", desc: "Traducciones en portugués, español, francés e inglés para trámites oficiales, académicos y legales.", icon: "languages" },
+                    { title: "Atención Presencial Staples", desc: "Notarización presencial rápida en 10 minutos dentro de Staples Danvers.", icon: "file-check" },
+                    { title: "Bienes Raíces y Poderes", desc: "Especialista en firmas de hipotecas, escrituras, poderes, testamentos y fideicomisos.", icon: "home" },
+                    { title: "Servicios de RMV", desc: "Títulos de vehículos, traspasos y registros en el mismo día.", icon: "car" },
+                    { title: "Servicio de Apostilla Exprés", desc: "Legalización y verificación exprés para uso internacional.", icon: "award" },
+                    { title: "Poderes Notariales (POA)", desc: "Elaboración y autenticación rápida de poderes legales y médicos.", icon: "user-check" }
                 ]
             }
         };
-
-        const GOOGLE_CALENDAR_SCRIPT_URL = "SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI";
 
         let currentLang = 'en';
         let datePickerInstance = null;
@@ -703,6 +705,7 @@
             document.getElementById('contact-title').innerText = t.contactTitle;
             document.getElementById('contact-hours').innerText = t.contactHours;
             document.getElementById('contact-weekend').innerText = t.contactWeekend;
+            document.getElementById('contact-mobile-24').innerText = t.contactMobile24;
             document.getElementById('contact-note').innerText = t.contactNote;
             
             document.getElementById('footer-disclaimer').innerText = t.footerDisclaimer;
@@ -778,7 +781,7 @@
             }
         }
 
-        // Envio do formulário com eventos de conversão
+        // Envio do formulário com eventos de conversão (Formspree direto, sem bloqueio de URL externa)
         document.getElementById('booking-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             
@@ -797,40 +800,35 @@
             };
 
             try {
-                if (GOOGLE_CALENDAR_SCRIPT_URL !== "SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI") {
-                    await fetch(GOOGLE_CALENDAR_SCRIPT_URL, {
-                        method: 'POST',
-                        mode: 'no-cors',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(formData)
-                    });
-                }
-
-                await fetch("https://formspree.io/f/mlgaqrnk", {
+                const response = await fetch("https://formspree.io/f/mlgaqrnk", {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                     body: JSON.stringify(formData)
                 });
 
-                if (typeof gtag === 'function') {
-                    gtag('event', 'generate_lead', {
-                        event_category: 'Engagement',
-                        service_type: formData.service,
-                        value: 1.0,
-                        currency: 'USD'
-                    });
+                if (response.ok) {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'generate_lead', {
+                            event_category: 'Engagement',
+                            service_type: formData.service,
+                            value: 1.0,
+                            currency: 'USD'
+                        });
 
-                    gtag('event', 'conversion', {
-                        'send_to': 'AW-17510551592/lead_form',
-                        'value': 1.0,
-                        'currency': 'USD'
-                    });
-                }
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-17510551592/lead_form',
+                            'value': 1.0,
+                            'currency': 'USD'
+                        });
+                    }
 
-                alert(t.alertSuccess);
-                this.reset();
-                if (datePickerInstance) {
-                    datePickerInstance.clear();
+                    alert(t.alertSuccess);
+                    this.reset();
+                    if (datePickerInstance) {
+                        datePickerInstance.clear();
+                    }
+                } else {
+                    alert(t.alertError);
                 }
             } catch (err) {
                 console.error("Submission error:", err);
