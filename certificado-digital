@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificado Digital ICP-Brasil nos EUA 100% Online | Eder Pereira Notary</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              navy: '#0b132b',
+            },
+            emeraldBrand: {
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-sky-100 selection:text-sky-900">
+
+  <!-- Top Announcement Bar (100% Online) -->
+  <header class="bg-brand-navy text-sky-100 py-2.5 px-4 text-xs sm:text-sm font-medium border-b border-slate-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+          <i class="fa-solid fa-wifi mr-1.5 text-[10px]"></i> 100% Online
+        </span>
+        <span>Atendimento por Videoconferência para Brasileiros em Todos os EUA</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:18579953805" class="hover:text-white transition flex items-center gap-1.5 font-semibold text-emerald-300">
+          <i class="fa-solid fa-phone text-xs"></i> (857) 995-3805
+        </a>
+        <span class="text-sky-400/40 hidden sm:inline">|</span>
+        <span class="text-sky-200 hidden sm:inline"><i class="fa-solid fa-laptop mr-1"></i> Sem Sair de Casa</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-900 to-sky-600 flex items-center justify-center text-white shadow-md shadow-sky-900/10">
+          <i class="fa-solid fa-shield-halved text-lg"></i>
+        </div>
+        <div>
+          <span class="block font-bold text-slate-900 text-lg leading-tight tracking-tight">Eder Pereira Notary</span>
+          <span class="block text-xs font-semibold uppercase tracking-wider text-sky-600">Certificação Digital ICP-Brasil Online</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/18579953805?text=Ol%C3%A1%20Eder%2C%20gostaria%20de%20emitir%20meu%20Certificado%20Digital%20ICP-Brasil%20online%20por%20videoconfer%C3%AAncia." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-emeraldBrand-600 hover:bg-emeraldBrand-700 active:scale-95 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-md shadow-emerald-700/20">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span class="hidden sm:inline">Agendar Online via WhatsApp</span>
+          <span class="sm:hidden">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-sky-50 via-white to-slate-50 pt-12 pb-16 lg:pt-20 lg:pb-24">
+    <!-- Glow Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-80 bg-gradient-to-r from-sky-200/50 via-emerald-100/30 to-blue-200/40 blur-3xl -z-10 rounded-full pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold mb-6 shadow-xs">
+          <i class="fa-solid fa-video text-emerald-600"></i>
+          <span>Emissão 100% Remota por Videoconferência • Válido em Todo o Brasil</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-tight">
+          Certificado Digital ICP-Brasil <br class="hidden sm:inline" />
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-700 via-brand-800 to-emeraldBrand-600">
+            Sem Sair de Casa nos EUA
+          </span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+          Emita ou renove o seu <strong>e-CPF</strong> e <strong>e-CNPJ</strong> diretamente do seu celular ou computador. Validação ágil por <strong>videoconferência de apenas 10 minutos</strong> com atendimento 100% em português para brasileiros em Massachusetts e em todos os Estados Unidos.
+        </p>
+
+        <!-- CTAs -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+          <a href="https://wa.me/18579953805?text=Ol%C3%A1%20Eder%2C%20preciso%20emitir%20meu%20Certificado%20Digital%20ICP-Brasil%20por%20videoconfer%C3%AAncia.%20Como%20funciona%3F" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emeraldBrand-600 hover:bg-emeraldBrand-700 text-white font-semibold px-7 py-4 rounded-xl shadow-lg shadow-emerald-700/25 transition-all text-base active:scale-95">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>Iniciar Emissão pelo WhatsApp</span>
+          </a>
+
+          <a href="tel:18579953805" 
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-semibold px-6 py-4 rounded-xl shadow-xs transition-all text-base active:scale-95">
+            <i class="fa-solid fa-phone text-sky-700"></i>
+            <span>Ligar: (857) 995-3805</span>
+          </a>
+        </div>
+
+        <!-- Trust Highlights -->
+        <div class="mt-12 pt-8 border-t border-slate-200 grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs">
+            <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-video text-xs"></i>
+            </div>
+            <p class="text-xs font-bold text-slate-900 leading-tight">100% Online</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">Sem precisar se deslocar</p>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs">
+            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-bolt text-xs"></i>
+            </div>
+            <p class="text-xs font-bold text-slate-900 leading-tight">Mesmo Dia</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">Validação em 10 minutos</p>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs">
+            <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-language text-xs"></i>
+            </div>
+            <p class="text-xs font-bold text-slate-900 leading-tight">Em Português</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">Suporte direto com especialista</p>
+          </div>
+
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-xs">
+            <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center mb-2">
+              <i class="fa-solid fa-scale-balanced text-xs"></i>
+            </div>
+            <p class="text-xs font-bold text-slate-900 leading-tight">Padrão ICP-Brasil</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">Validade jurídica nacional</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- O que você resolve (Dores dos clientes) -->
+  <section class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600 mb-2">Sem Burocracia no Brasil</h2>
+        <p class="text-2xl sm:text-3xl font-bold text-slate-900">O que você pode fazer com o seu Certificado Digital?</p>
+        <p class="mt-2 text-slate-600 text-sm">Assine com a mesma validade jurídica de uma firma reconhecida em cartório no Brasil.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-sky-300 transition-all">
+          <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-file-signature text-base"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Procurações em Cartórios</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Assine eletronicamente procurações públicas e escrituras no e-Notariado sem filas e sem agendamento no consulado.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-all">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-building-columns text-base"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Receita Federal & e-CAC</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Acesse o portal e-CAC com nível Ouro, declare ou retifique o IRPF, consulte pendências fiscais e regularize o CPF suspenso.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-indigo-300 transition-all">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-briefcase text-base"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Empresas & Notas Fiscais</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Abra ou altere contratos sociais nas Juntas Comerciais e emita notas fiscais eletrônicas da sua empresa brasileira à distância.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-amber-300 transition-all">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-house-chimney-crack text-base"></i>
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Imóveis & Inventários</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Assine partilhas de bens, contratos imobiliários de compra e venda, financiamentos bancários e inventários familiares.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona / 3 Passos Online -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800 mb-3">
+          Processo 100% à Distância
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Emita seu Certificado em 3 Passos Simples</h2>
+        <p class="mt-2 text-slate-600 text-sm">Tudo feito pelo seu celular ou computador, sem sair da sua casa nos EUA.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+        <!-- Passo 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs relative text-left">
+          <div class="w-12 h-12 rounded-xl bg-brand-900 text-white flex items-center justify-center font-extrabold text-lg mb-4 shadow-sm">
+            1
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Contato no WhatsApp</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Você entra em contato conosco, tira dúvidas e envia a foto do seu documento de identificação (CNH ou RG) para conferência imediata.
+          </p>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs relative text-left">
+          <div class="w-12 h-12 rounded-xl bg-sky-600 text-white flex items-center justify-center font-extrabold text-lg mb-4 shadow-sm">
+            2
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Videoconferência de 10 min</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            No horário agendado, você participa de uma chamada de vídeo rápida pelo próprio smartphone para confirmação biométrica da sua identidade.
+          </p>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs relative text-left">
+          <div class="w-12 h-12 rounded-xl bg-emeraldBrand-600 text-white flex items-center justify-center font-extrabold text-lg mb-4 shadow-sm">
+            3
+          </div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Emissão no Mesmo Dia</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            O seu certificado digital é emitido e instalado. Você já fica apto a assinar digitalmente e resolver suas pendências com o Brasil!
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick CTA -->
+      <div class="text-center mt-10">
+        <a href="https://wa.me/18579953805?text=Ol%C3%A1%20Eder%2C%20quero%20agendar%20minha%20videoconfer%C3%AAncia%20para%20o%20Certificado%20Digital." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-emeraldBrand-600 hover:bg-emeraldBrand-700 text-white font-semibold px-6 py-3.5 rounded-xl shadow-md transition-all text-sm active:scale-95">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Agendar Videoconferência Agora</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modelos Disponíveis -->
+  <section class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600 mb-2">Pessoa Física & Jurídica</h2>
+        <p class="text-2xl sm:text-3xl font-bold text-slate-900">Escolha o Certificado que Você Precisa</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- e-CPF -->
+        <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 flex flex-col justify-between hover:border-sky-300 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">
+                Pessoa Física (Online)
+              </span>
+              <span class="text-xs font-medium text-slate-500">Validade: 1 a 3 anos</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900">e-CPF ICP-Brasil</h3>
+            <p class="text-slate-600 text-sm mt-2">
+              Sua assinatura digital oficial para resolver exigências de cartórios, Receita Federal e transações pessoais no Brasil.
+            </p>
+
+            <div class="mt-6 space-y-3">
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                <span><strong>Modelo A1 (Arquivo):</strong> Instalado direto no seu computador ou celular (validade 1 ano).</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                <span><strong>Modelo A3 (Nuvem / Mobile):</strong> Acesso direto no smartphone através de aplicativo seguro (validade 1 a 3 anos).</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                <span>Acesso ao Portal Gov.br, e-CAC, assinaturas de procurações e contratos.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-200">
+            <a href="https://wa.me/18579953805?text=Ol%C3%A1%2C%20gostaria%20de%20emitir%20o%20e-CPF%20ICP-Brasil%20online." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-semibold py-3.5 px-4 rounded-xl transition text-sm">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <span>Solicitar e-CPF Online</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- e-CNPJ -->
+        <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 flex flex-col justify-between hover:border-emerald-300 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+                Pessoa Jurídica (Online)
+              </span>
+              <span class="text-xs font-medium text-slate-500">Validade: 1 a 3 anos</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900">e-CNPJ ICP-Brasil</h3>
+            <p class="text-slate-600 text-sm mt-2">
+              A identidade eletrônica da sua empresa no Brasil para cumprir exigências fiscais e tributárias mesmo residindo no exterior.
+            </p>
+
+            <div class="mt-6 space-y-3">
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                <span><strong>Modelo A1:</strong> Arquivo ideal para integração com sistemas de emissão de NF-e e contabilidade.</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                <span><strong>Modelo A3 Nuvem:</strong> Prático e seguro, sem risco de perda de mídias físicas.</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                <span>Acesso exclusivo do sócio perante a Receita Federal e Prefeituras.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-200">
+            <a href="https://wa.me/18579953805?text=Ol%C3%A1%2C%20gostaria%20de%20emitir%20o%20e-CNPJ%20ICP-Brasil%20online." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-semibold py-3.5 px-4 rounded-xl transition text-sm">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <span>Solicitar e-CNPJ Online</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-sky-600 mb-2">Dúvidas Frequentes</h2>
+        <p class="text-2xl sm:text-3xl font-bold text-slate-900">Perguntas Comuns sobre a Emissão Online</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs">
+          <h4 class="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+            <i class="fa-solid fa-circle-question text-sky-600"></i>
+            Preciso ir a algum lugar físico ou cartório nos EUA?
+          </h4>
+          <p class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed pl-6">
+            Não! Todo o processo é <strong>100% online</strong>. A validação da sua identidade é realizada por videoconferência com duração média de apenas 10 minutos, diretamente do seu celular ou computador.
+          </p>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs">
+          <h4 class="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+            <i class="fa-solid fa-circle-question text-sky-600"></i>
+            Quais documentos brasileiros são aceitos para a emissão?
+          </h4>
+          <p class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed pl-6">
+            Você pode apresentar a <strong>CNH</strong> (Carteira Nacional de Habilitação - física ou digital), <strong>RG recente</strong> ou <strong>Passaporte brasileiro válido</strong>. Não são aceitos documentos americanos para a emissão do padrão ICP-Brasil.
+          </p>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs">
+          <h4 class="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+            <i class="fa-solid fa-circle-question text-sky-600"></i>
+            Moro fora de Massachusetts. Posso emitir com você?
+          </h4>
+          <p class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed pl-6">
+            Sim! Atendemos brasileiros residentes em <strong>qualquer estado dos EUA</strong> (Flórida, Califórnia, Nova York, Nova Jersey, Texas, Geórgia, etc.). Basta ter acesso à internet e seu smartphone em mãos.
+          </p>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="p-5 bg-white rounded-2xl border border-slate-200 shadow-xs">
+          <h4 class="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
+            <i class="fa-solid fa-circle-question text-sky-600"></i>
+            Em quanto tempo o certificado fica pronto para uso?
+          </h4>
+          <p class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed pl-6">
+            A aprovação e liberação ocorrem geralmente no <strong>mesmo dia</strong> após a conclusão da chamada de vídeo. Fornecemos instruções completas e suporte em português para você instalar com facilidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Bar -->
+  <section class="py-14 bg-gradient-to-tr from-brand-navy via-slate-900 to-brand-900 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Resolva Suas Pendências no Brasil Hoje Mesmo</h2>
+      <p class="mt-3 text-sky-200 text-sm sm:text-base">
+        Atendimento rápido, seguro e totalmente em português com Eder Pereira Notary.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+        <a href="https://wa.me/18579953805?text=Ol%C3%A1%20Eder%2C%20tenho%20urg%C3%AAncia%20para%20emitir%20meu%20Certificado%20Digital%20online." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emeraldBrand-600 hover:bg-emeraldBrand-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition active:scale-95 text-base">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>Falar no WhatsApp: (857) 995-3805</span>
+        </a>
+
+        <a href="tel:18579953805" 
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-6 py-4 rounded-xl transition active:scale-95 text-base">
+          <i class="fa-solid fa-phone"></i>
+          <span>Ligar Agora</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-xs sm:text-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <p class="font-bold text-white text-base">Eder Pereira Notary</p>
+        <p class="text-slate-400 text-xs mt-0.5">Emissão de Certificados Digitais ICP-Brasil 100% Online nos EUA</p>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:18579953805" class="text-slate-300 hover:text-white transition flex items-center gap-1">
+          <i class="fa-solid fa-phone text-emerald-400"></i> (857) 995-3805
+        </a>
+        <span>•</span>
+        <a href="https://wa.me/18579953805" target="_blank" class="text-emerald-400 hover:underline">
+          WhatsApp Disponível
+        </a>
+      </div>
+
+      <p class="text-slate-500 text-xs">
+        © 2026 Eder Pereira Notary. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
