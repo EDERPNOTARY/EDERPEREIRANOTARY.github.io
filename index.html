@@ -325,8 +325,9 @@
                 </div>
                 <div class="pt-4 border-t border-white/10 space-y-1">
                     <p id="contact-hours" class="text-xs uppercase tracking-widest text-brand-gold-light font-black"></p>
-                    <p id="contact-weekend" class="text-xs uppercase tracking-widest text-brand-gold-light/80 font-black"></p>
-                    <p id="contact-mobile-24" class="text-xs uppercase tracking-widest text-brand-gold-light font-black"></p>
+                    <p id="contact-weekend" class="text-xs uppercase tracking-widest text-brand-gold-light/90 font-black"></p>
+                    <p id="contact-sunday" class="text-xs uppercase tracking-widest text-brand-gold-light/70 font-black"></p>
+                    <p id="contact-mobile-24" class="text-xs uppercase tracking-widest text-brand-gold-light font-black pt-1"></p>
                     <p id="contact-note" class="text-[10px] text-gray-400 mt-2"></p>
                 </div>
             </div>
@@ -414,10 +415,11 @@
                 locDesc: "Visit us at Staples Danvers for fast walk-ins during store hours, or request our 24/7 mobile notary visit directly to your home, office, hospital, or airport across Greater Boston and MA.",
                 locFeatures: ["Staples Danvers Walk-In", "24/7 Statewide Mobile Service", "Secure Environment", "Ample Free Parking"],
                 navBtn: "Get Directions", contactTitle: "Direct Contact", 
-                contactHours: "Staples Danvers: Mon-Fri 8:30 AM - 7:00 PM",
-                contactWeekend: "Saturday & Sunday: By Appointment",
+                contactHours: "Staples Danvers: Mon-Fri 8:30 AM - 8:00 PM",
+                contactWeekend: "Saturday: 10:00 AM - 5:00 PM",
+                contactSunday: "Sunday: By Appointment",
                 contactMobile24: "Mobile Notary: Available 24/7 On-Demand Across MA",
-                contactNote: "Walk-ins welcome at Staples during weekday store hours. Mobile service available 24/7 upon request.",
+                contactNote: "Walk-ins welcome at Staples Mon-Fri (8:30 AM - 8:00 PM) & Sat (10:00 AM - 5:00 PM). Mobile service available 24/7.",
                 
                 footerDisclaimer: "Legal Notice: I am not an attorney licensed to practice law in the Commonwealth of Massachusetts and I am strictly prohibited from providing legal advice.",
                 footerCopy: "© 2026 Eder Pereira Notary Public. All Rights Reserved.",
@@ -493,10 +495,11 @@
                 locDesc: "Atendimento presencial na Staples Danvers durante o horário comercial ou serviço móvel 24 horas por dia em toda a Grande Boston e Massachusetts.",
                 locFeatures: ["Staples Danvers Presencial", "Móvel 24/7 em Todo MA", "Ambiente Seguro", "Estacionamento Amplo"],
                 navBtn: "Obter Direções", contactTitle: "Contato Direto", 
-                contactHours: "Staples Danvers: Seg-Sex 8:30 - 19:00",
-                contactWeekend: "Sábado e Domingo: Com Agendamento",
+                contactHours: "Staples Danvers: Seg-Sex 8:30 AM - 8:00 PM",
+                contactWeekend: "Sábado: 10:00 AM - 5:00 PM",
+                contactSunday: "Domingo: Com Agendamento",
                 contactMobile24: "Notário Móvel: Disponível 24/7 em Qualquer Cidade de MA",
-                contactNote: "Presencial na Staples em dias úteis. Atendimento móvel disponível 24 horas sob solicitação.",
+                contactNote: "Presencial na Staples de Seg a Sex (8:30 AM - 8:00 PM) e Sáb (10:00 AM - 5:00 PM). Móvel 24/7 sob solicitação.",
                 
                 footerDisclaimer: "Aviso Legal: Não sou advogado em Massachusetts e sou estritamente proibido de prestar consultoria jurídica.",
                 footerCopy: "© 2026 Eder Pereira Notary Public. Todos os direitos reservados.",
@@ -572,10 +575,11 @@
                 locDesc: "Visítenos en Staples Danvers para atención inmediata o solicite el servicio móvil 24 horas en su hogar, oficina u hospital en Boston y todo Massachusetts.",
                 locFeatures: ["Staples Danvers Presencial", "Servicio Móvil 24/7 en Todo MA", "Ambiente Seguro", "Estacionamiento Amplio"],
                 navBtn: "Obtener Direcciones", contactTitle: "Contacto Directo", 
-                contactHours: "Staples Danvers: Lun-Vie 8:30 AM - 7:00 PM",
-                contactWeekend: "Sábado y Domingo: Solo con Cita",
+                contactHours: "Staples Danvers: Lun-Vie 8:30 AM - 8:00 PM",
+                contactWeekend: "Sábado: 10:00 AM - 5:00 PM",
+                contactSunday: "Domingo: Solo con Cita",
                 contactMobile24: "Notaría Móvil: Disponible 24/7 a Domicilio en Todo MA",
-                contactNote: "Atención presencial en días laborables. Citas móviles disponibles las 24 horas previa solicitud.",
+                contactNote: "Atención presencial Lun-Vie (8:30 AM - 8:00 PM) y Sáb (10:00 AM - 5:00 PM). Citas móviles disponibles las 24 horas.",
                 
                 footerDisclaimer: "Aviso Legal: No soy abogado en Massachusetts y tengo estrictamente prohibido brindar asesoría legal.",
                 footerCopy: "© 2026 Eder Pereira Notary Public. Todos los derechos reservados.",
@@ -705,6 +709,7 @@
             document.getElementById('contact-title').innerText = t.contactTitle;
             document.getElementById('contact-hours').innerText = t.contactHours;
             document.getElementById('contact-weekend').innerText = t.contactWeekend;
+            document.getElementById('contact-sunday').innerText = t.contactSunday;
             document.getElementById('contact-mobile-24').innerText = t.contactMobile24;
             document.getElementById('contact-note').innerText = t.contactNote;
             
@@ -734,13 +739,17 @@
             const min = now.getMinutes();
             
             const currentTime = hour + (min / 60);
-            const isWeekdayOpen = (day >= 1 && day <= 5) && (currentTime >= 8.5 && currentTime < 19);
+            // Seg-Sex: 8:30 AM (8.5) às 8:00 PM (20.0)
+            const isWeekdayOpen = (day >= 1 && day <= 5) && (currentTime >= 8.5 && currentTime < 20);
+            // Sábado: 10:00 AM (10.0) às 5:00 PM (17.0)
+            const isSaturdayOpen = (day === 6) && (currentTime >= 10 && currentTime < 17);
+            const isOpen = isWeekdayOpen || isSaturdayOpen;
             
             const st = document.getElementById('status-text');
             const sd = document.getElementById('status-dot');
             const t = translations[lang];
             
-            if (isWeekdayOpen) {
+            if (isOpen) {
                 st.innerText = t.openNow; st.className = "text-[8px] font-black uppercase text-emerald-600 tracking-widest";
                 sd.className = "w-2 h-2 rounded-full bg-emerald-500 animate-pulse";
             } else {
